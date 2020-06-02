@@ -14,8 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //Add these two methods to the activities they are meant to be on!
+        
         loadWaiata();
         loadCarvings();
     }
