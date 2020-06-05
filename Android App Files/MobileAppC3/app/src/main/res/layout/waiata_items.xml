@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <ImageView
+            android:id="@+id/waiata1"
+            android:layout_width="180dp"
+            android:layout_height="180dp"/>
+        <TextView
+            android:id="@+id/waiata_title"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/waiata1"/>
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
