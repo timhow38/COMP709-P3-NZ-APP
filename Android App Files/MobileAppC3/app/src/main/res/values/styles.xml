@@ -2,10 +2,27 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
+
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!-- Global Font -->
+        <item name="android:textViewStyle">@style/PoppinsTextViewStyle</item>
+        <item name="android:buttonStyle">@style/PoppinsButtonStyle</item>
+    </style>
+    <!-- Global Font -->
+
+    <style name="PoppinsTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">Poppins</item>
     </style>
 
+    <style name="PoppinsButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">Poppins</item>
+    </style>
+
+    <!-- Global BottomNav Style -->
+    <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/nav_icon_active</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
 </resources>
