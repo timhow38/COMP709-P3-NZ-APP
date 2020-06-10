@@ -11,7 +11,7 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "waiata")
 public class Waiata implements Parcelable {
     @PrimaryKey(autoGenerate = true)
-    private int id;
+    protected int id;
 
     @ColumnInfo(name = "waiata_Name")
     private String waiataName;
