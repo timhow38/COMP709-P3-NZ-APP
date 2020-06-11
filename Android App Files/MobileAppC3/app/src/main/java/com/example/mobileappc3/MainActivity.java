@@ -2,11 +2,8 @@ package com.example.mobileappc3;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
-import android.content.ClipData;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 
 import java.util.ArrayList;
@@ -17,7 +14,6 @@ public class MainActivity extends AppCompatActivity {
 
     Fragment waiataFragment = new WaiataFragment();
     Fragment maraeFragment = new MaraeFragment();
-    FragmentTransaction fragmentTransaction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +23,7 @@ public class MainActivity extends AppCompatActivity {
         loadWaiata();
         loadCarvings();
 
-        fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.abc123, waiataFragment);
-        fragmentTransaction.commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.main_menu_fragmentBox, waiataFragment).commit();
     }
 
     private void loadWaiata() {
@@ -71,14 +65,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btmNavWaiata(MenuItem item) {
-        fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.abc123, waiataFragment);
-        fragmentTransaction.commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.main_menu_fragmentBox, waiataFragment).addToBackStack(null).commit();
     }
 
     public void btmNavMarae(MenuItem item) {
-        fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.abc123, maraeFragment);
-        fragmentTransaction.commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.main_menu_fragmentBox, maraeFragment).addToBackStack(null).commit();
     }
 }
