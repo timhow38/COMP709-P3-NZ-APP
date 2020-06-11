@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-<item
-    android:id="@+id/nav_songs"
-    android:enabled="true"
-    android:icon="@drawable/ic_nav_icon_music"
-    android:title="Waiata"/>
-<item
-    android:id="@+id/nav_home"
-    android:enabled="true"
-    android:icon="@drawable/ic_nav_icon_marae"
-    android:title="Marae"/>
+    <item
+        android:id="@+id/nav_songs"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_icon_music"
+        android:onClick="btmNavWaiata"
+        android:title="Waiata" />
+    <item
+        android:id="@+id/nav_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_nav_icon_marae"
+        android:onClick="btmNavMarae"
+        android:title="Marae" />
 </menu>
