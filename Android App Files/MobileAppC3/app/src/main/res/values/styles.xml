@@ -9,7 +9,7 @@
         <!-- Global Font -->
     </style>
     <!-- Global Font -->
-    
+
     <!-- Global BottomNav Style -->
     <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light">
         <item name="colorPrimary">@color/nav_icon_active</item>
