@@ -21,7 +21,6 @@
             android:layout_alignBottom="@+id/waiata1"/>
 
 
-
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
