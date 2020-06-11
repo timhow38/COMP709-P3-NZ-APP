@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_view_maraeCarousel"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:src="@drawable/wintec_marae" />
+    <TextView
+        android:id="@+id/text_view_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/image_view_maraeCarousel"
+        android:text="Te Kōpū Mānia o Kirikiriroa"/>
+    <TextView
+        android:id="@+id/text_view_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="7dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/text_view_title"
+        android:justificationMode="inter_word"
+        android:text="Nau mai haere mai ki Te Kōpū Mānia o Kirikiriroa. Welcome to the Wintec Marae, named for the smooth fertile lands of Hamilton, which linked the Waikato hapū (subtribes) who lived along the banks of the Waikato River."/>
+    <TextView
+        android:id="@+id/text_view_info2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/text_view_info"
+        android:text="Students and staff are able to utilise our multi-purpose marae to conduct and experience teaching, learning and pastoral support in a uniquely Māori environment. Comprising of three main buildings and seven significant carvings, the design of the marae depicts a contemporary version of traditional aspects with a focus on matauranga Māori (learning) and tikanga (customs and traditions)"/>
+</RelativeLayout>
