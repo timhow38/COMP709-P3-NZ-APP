@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
         android:id="@+id/nav_songs"
-        android:enabled="true"
-        android:onClick="btmNavWaiata"
         android:icon="@drawable/ic_nav_icon_music"
         android:title="@string/fragment_01" />
+
     <item
         android:id="@+id/nav_home"
-        android:enabled="true"
-        android:onClick="btmNavMarae"
         android:icon="@drawable/ic_nav_icon_marae"
         android:title="@string/fragment_02" />
+
 </menu>
