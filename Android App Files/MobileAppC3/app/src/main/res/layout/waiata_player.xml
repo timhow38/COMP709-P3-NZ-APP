@@ -9,64 +9,28 @@
     tools:context=".MainActivity"
     android:background="@drawable/gradient_background">
 
-
-    <!--Header-->
+    <!-- Header -->
     <RelativeLayout
-
+        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="80dp">
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="0dp"
-            android:text="Ngā Waiata"
-            android:textColor="@android:color/white"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="15dp" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView1"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="2dp"
-            android:text="Songs"
-            android:textSize="20dp"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="15dp" />
-
         <ImageView
-            android:src="@drawable/ic_person"
-            android:id="@+id/account"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="15dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="15dp" />
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:layout_marginHorizontal="8dp"
+            />
 
     </RelativeLayout>
 
-    <!--Play back with buttons-->
+    <!-- Play back with buttons -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="270dp">
 
-
-        <!--Main title of song-->
+        <!-- Main title of song -->
         <TextView
             android:id="@+id/TVsongTitle"
             android:text="E Kore Koe E Ngaro"
@@ -81,8 +45,7 @@
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="15dp" />
 
-
-        <!--English title of song-->
+        <!-- English title of song -->
         <TextView
             android:id="@+id/TVsongTitle2"
             android:text="You are not lost"
@@ -95,8 +58,7 @@
             android:layout_marginStart="15dp"
             android:layout_marginLeft="15dp" />
 
-
-        <!--Image of song-->
+        <!-- Image of song -->
         <androidx.cardview.widget.CardView
 
             android:layout_width="300dp"
@@ -114,11 +76,9 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/wintec_marae" />
 
-
         </androidx.cardview.widget.CardView>
 
-
-        <!--skip to previous-->
+        <!-- Skip to previous -->
         <Button
             android:id="@+id/backbutton"
             android:layout_width="60dp"
@@ -130,8 +90,7 @@
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="14dp" />
 
-
-        <!--playpause button-->
+        <!-- Play/Pause button -->
         <Button
             android:id="@+id/pauseplay"
             android:layout_width="60dp"
@@ -142,8 +101,7 @@
             android:layout_toRightOf="@+id/backbutton"
             android:layout_marginLeft="14dp" />
 
-
-        <!--skip to next-->
+        <!-- Skip to next -->
         <Button
             android:id="@+id/skipbutton"
             android:layout_width="60dp"
@@ -154,8 +112,7 @@
             android:layout_toRightOf="@+id/pauseplay"
             android:layout_marginLeft="14dp" />
 
-
-        <!--seekbar for playback-->
+        <!-- Seekbar for playback -->
         <SeekBar
             android:layout_width="209dp"
             android:layout_height="50dp"
@@ -163,10 +120,9 @@
             android:layout_below="@id/backbutton"
             android:layout_marginLeft="15dp" />
 
-
     </RelativeLayout>
 
-    <!--Scroll view for recommended-->
+    <!-- Scroll view for recommended -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -176,8 +132,5 @@
             layout="@layout/waiata_scroll_frag"/>
 
     </ScrollView>
-
-
-
 
 </LinearLayout>

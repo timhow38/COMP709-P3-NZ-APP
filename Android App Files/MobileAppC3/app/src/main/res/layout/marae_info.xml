@@ -13,6 +13,7 @@
         android:layout_height="275dp"
         android:src="@drawable/wintec_marae" />
     <TextView
+        android:layout_marginTop="15dp"
         android:id="@+id/text_view_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -11,6 +11,8 @@
     tools:context=".WaiataFragment">
 
     <RelativeLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
