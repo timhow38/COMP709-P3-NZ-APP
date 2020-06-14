@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:id="@+id/relativeMarae1">
+
+        <ImageView
+            android:id="@+id/IM_marae"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:src="@drawable/wintec_marae" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/RelativeTitle1"
+        android:layout_below="@id/relativeMarae1">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/TV_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:text="E ko Te Kuratini o Waikato e "
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/relativeLyric1"
+        android:layout_below="@id/RelativeTitle1"
+        android:padding="10dp">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/lyric1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:text="E kore koe e ngaro he kākano i ruia
+Kākano a te Kaahu e tū nei e
+Te kōpū Mānia, te ngāwhā whakatupu
+Ka tupu he tangata, rere ki te ao "/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/RelativeLyric2"
+        android:layout_below="@id/relativeLyric1"
+        android:padding="10dp">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/lyric2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:text="Horahia Matariki, kūmea ngā waka
+Herea ki te pou o te aroha e
+Te Atairangikaahu, tāiri kei runga
+Ko Kīngi Tūheitia ki te whenua e "/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/RelativeLyric3"
+        android:layout_below="@id/RelativeLyric2"
+        android:padding="10dp">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/lyric3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:text="Piki ake Tāwhaki, tāhūhū matapū
+Ngā kete wānanga e toru e
+Whītikitia rā, ka turuturu iho
+E ko Te Kuratini o Waikato e "/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLyric4"
+        android:layout_below="@id/RelativeLyric3">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="83dp"
+            android:layout_marginLeft="83dp"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/Sing"
+            android:text="Sing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="83dp"
+            android:layout_marginLeft="83dp"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/non_vocal"
+            android:text="Non-Vocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="237dp"
+            android:layout_marginLeft="237dp"
+            android:layout_marginTop="2dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

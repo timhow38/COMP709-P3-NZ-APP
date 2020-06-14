@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- Recommended text-->
+    <RelativeLayout
+        android:id="@+id/relativetextlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Recommended"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recommend1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/relativetextlayout"
+        android:padding="12dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/recommendimg1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="12dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/wintec_marae" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/recommendtext1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/recommendimg1"
+            android:text="Waikato Te Awa"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:id="@+id/recommendplay1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/recommendtext1"
+            android:layout_toRightOf="@+id/recommendimg1"
+            android:text="Play"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+
+        <Button
+            android:id="@+id/recommendmoreinfo1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/recommendtext1"
+            android:layout_toRightOf="@+id/recommendplay1"
+            android:text="More Info"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recommend2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/recommend1"
+        android:padding="12dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/recommendimg2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="12dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/wintec_marae" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/recommendtext2"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/recommendimg2"
+            android:text="Waikato Te Awa"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:id="@+id/recommendplay2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/recommendtext2"
+            android:layout_toRightOf="@+id/recommendimg2"
+            android:layout_marginStart="10dp"
+            android:text="Play"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:id="@+id/recommendmoreinfo2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/recommendtext2"
+            android:layout_toRightOf="@+id/recommendplay2"
+            android:text="More Info"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recommend3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/recommend2"
+        android:padding="12dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/recommendimg3"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="12dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/wintec_marae" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/recommendtext3"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/recommendimg3"
+            android:text="Waikato Te Awa"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:id="@+id/recommendplay3"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/recommendtext3"
+            android:layout_toRightOf="@+id/recommendimg3"
+            android:text="Play"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:id="@+id/recommendmoreinfo3"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/recommendtext3"
+            android:layout_toRightOf="@+id/recommendplay3"
+            android:text="More Info"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recommend4"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/recommend3"
+        android:padding="12dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/recommendimg4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="12dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/wintec_marae" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/recommendtext4"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/recommendimg4"
+            android:text="Waikato Te Awa"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:id="@+id/recommendplay4"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/recommendtext4"
+            android:layout_toRightOf="@+id/recommendimg4"
+            android:text="Play"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <Button
+            android:id="@+id/recommendmoreinfo4"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/recommendtext4"
+            android:layout_toRightOf="@+id/recommendplay4"
+            android:text="More Info"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
