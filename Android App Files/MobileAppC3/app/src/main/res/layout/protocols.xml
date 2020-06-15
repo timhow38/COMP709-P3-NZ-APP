@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_view_marae"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:src="@drawable/wintec_marae"/>
+
+
+    <TextView
+        android:id="@+id/text_view_protocols"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:text="Marae Protocols"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_below="@id/image_view_marae"/>
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/text_view_protocols"
+        >
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            >
+
+            <TextView
+                android:id="@+id/text_view_wharenui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="7dp"
+                android:textColor="@android:color/white"
+                android:text="Te Kōpū Mānia o Kirikiriroa is a functional, modern marae complex set up to accommodate a variety of uses. Although our marae is contemporary, we still have protocols and tikanga (customs and traditions) to adhere to." />
+
+            <TextView
+                android:id="@+id/text_view_title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_wharenui"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="7dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:text="Wharenui – Te Kākano a te Kaahu "/>
+
+
+            <TextView
+                android:id="@+id/text_view_wharenui_rules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@android:color/white"
+                android:text="
+        •	Please remove footwear before entering the wharenui \n
+        •	Please do not consume food or drinks in the wharenui \n
+        •	Health and Safety allows for water bottles \n
+        •	Please do not sit on pillows or stand on mattresses \n
+        •	Please do not leave hats, hairs brushes or combs on \n
+          tabletops \n
+        •	Please do not hang items on carvings"
+                android:layout_below="@+id/text_view_title1"/>
+
+            <TextView
+                android:id="@+id/text_view_title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_wharenui_rules"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="7dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:text="Wharekai "/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="6dp"
+                android:text="
+        •	Karakia (grace) is said before every meal \n
+        •	Please do not sit on tables \n
+        •	Seats are provided for your convenience \n
+        •	Please do not brush your hair in the wharekai \n
+        •	Please do not leave hats, hairbrushes or combs on the \n
+          tabletops \n
+        •	Please wear appropriate clothing, no pyjamas permitted \n
+        •	Please always keep the dining and kitchen areas clean \n
+          and tidy \n
+        •	Please wipe down tables and benches after every meal \n
+        •	Please do not wipe seats with cloths used for \n
+          tabletops \n
+        •	Please do not stack chairs on the table \n
+        •	Please use dishes provided rather than disposable items \n
+" android:layout_below="@id/text_view_title2"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+     </ScrollView>
+
+</RelativeLayout>

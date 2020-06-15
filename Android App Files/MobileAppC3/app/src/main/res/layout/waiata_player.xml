@@ -60,7 +60,6 @@
 
         <!-- Image of song -->
         <androidx.cardview.widget.CardView
-
             android:layout_width="300dp"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
@@ -71,7 +70,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="-130dp">
 
-            <RelativeLayout
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/wintec_marae" />
