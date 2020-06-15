@@ -12,16 +12,18 @@
         android:layout_width="match_parent"
         android:layout_height="275dp"
         android:src="@drawable/wintec_marae" />
+
     <TextView
-        android:layout_marginTop="15dp"
         android:id="@+id/text_view_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:layout_marginLeft="15dp"
-        android:textColor="@android:color/white"
         android:layout_below="@+id/image_view_maraeCarousel"
-        android:text="Te Kōpū Mānia o Kirikiriroa"/>
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:text="Te Kōpū Mānia o Kirikiriroa"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
     <TextView
         android:id="@+id/text_view_info"
         android:layout_width="wrap_content"

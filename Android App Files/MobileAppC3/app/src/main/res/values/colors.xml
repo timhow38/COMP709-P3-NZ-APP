@@ -7,6 +7,9 @@
     <color name="white">#FFFFFF</color>
     <color name="whiteTransparent">#80FFFFFF</color>
 
+
+    <!--  -->
+    <color name="act_carving_box">#304652</color>
     <!-- NAV Background -->
     <color name="nav_icon_active">#FFD500</color>
     <color name="nav_background">#043E5C</color>
