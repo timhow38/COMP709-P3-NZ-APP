@@ -5,6 +5,7 @@
     <color name="colorAccent">#03DAC5</color>
 
     <color name="white">#FFFFFF</color>
+    <color name="whiteTransparent">#80FFFFFF</color>
 
     <!-- NAV Background -->
     <color name="nav_icon_active">#FFD500</color>
