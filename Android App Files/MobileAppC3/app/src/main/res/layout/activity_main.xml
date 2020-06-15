@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,8 +12,7 @@
         android:id="@+id/main_menu_fragmentBox"
         android:layout_width="match_parent"
         android:layout_height="674dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation_view"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_alignParentTop="true"/>
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -21,10 +20,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/BottomNavigationTheme"
+        android:layout_alignParentBottom="true"
         app:itemBackground="@color/nav_background"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_navigation_view_menu" />
 
-</LinearLayout>
+</RelativeLayout>
 
 
