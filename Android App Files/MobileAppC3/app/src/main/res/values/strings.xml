@@ -5,4 +5,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="fragment_01">Waiata</string>
     <string name="fragment_02">Marae</string>
+
+    <string name="act_carving_title">Carvings</string>
 </resources>
