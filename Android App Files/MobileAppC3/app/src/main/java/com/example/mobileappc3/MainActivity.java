@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-    private ArrayList<Waiata> mWaiata = new ArrayList<>();
+    //Waiata_DB: private ArrayList<Waiata> mWaiata = new ArrayList<>();
     private ArrayList<Carving> mCarving = new ArrayList<>();
 
     Fragment waiataFragment = new WaiataFragment();
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.main_menu_fragmentBox, waiataFragment).commit();
     }
 
-    /*Implementing on Waiata Database
+    /*Implementing Waiata Database (was not used)
     private void loadWaiata() {
         //Loads Waiata Database
         //Name, Desc, Maori_Lyrics, Eng_Lyrics, VideoName
