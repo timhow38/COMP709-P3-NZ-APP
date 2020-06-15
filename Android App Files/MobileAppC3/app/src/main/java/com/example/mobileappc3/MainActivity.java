@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        loadWaiata();
         loadCarvings();
 
         getSupportFragmentManager().beginTransaction().replace(R.id.main_menu_fragmentBox, waiataFragment).commit();
     }
 
+    /*Implementing on Waiata Database
     private void loadWaiata() {
         //Loads Waiata Database
         //Name, Desc, Maori_Lyrics, Eng_Lyrics, VideoName
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         mWaiata.add(w6);
         Waiata w7 = new Waiata("Pua Te Kōwhai", "This waiata is suitable for any occasion and is still used both in and out of Wintec. The song jumps around as it follows the flight path of the Tui.\r\n \r\nHistorically, the hill that Wintec sits on was part of the lands designated ‘mara’ or gardening land, thus, the name Te Kōpū Mānia O Kirikiriroa – The Smooth Belly (fertile lands) of Kirikiriroa (known presently as Hamilton).\r\n \r\nWaikato-Taniui, Ngāti Hauā and Ngāti Wairere are the mana whenua (known affiliated tribes) of this land.", "Pua te kōwhai\r\nNgawhā te kōrari\r\nHe tohu kōanga \r\nTau mai e Tui ki tō kāpunipuni\r\nHonihoni, kohikohi\r\nHei oranga, hei rongoā\r\nPania te kiri ki te kōwhai kura\r\nE Tui haurangi i te tākoha o te Atua\r\nRere atu, hoki mai\r\nParea te ua kōwhai\r\nKa whiti mai te rā e", "The kowhai blooms\r\nBursts open in readiness for plucking\r\na sign of spring\r\nThe Tui begin to assemble\r\nTo nibble to gather\r\nFor life and well-being\r\nThe stain of the kowhai touches\r\nWhile Tui get drunk on the nectar of god\r\nFlittering away, returning\r\nA display of yellow\r\nAs the sun shines.", "");
         mWaiata.add(w7);
-    }
+    }*/
 
     private void loadCarvings() {
         //Loads Carvings Database
