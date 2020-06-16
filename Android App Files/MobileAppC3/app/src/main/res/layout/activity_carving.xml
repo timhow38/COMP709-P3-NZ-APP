@@ -27,7 +27,7 @@
             android:layout_marginStart="134dp"
             android:layout_marginLeft="134dp"
             android:layout_marginTop="9dp"
-            android:fontFamily="sans-serif-black"
+            android:fontFamily="@font/poppins_bold"
             android:text="@string/act_carving_title"
             android:textColor="@android:color/white"
             android:textSize="30dp" />
@@ -76,18 +76,18 @@
                     >
 
                     <TextView
-                        android:fontFamily="@font/poppins_bold"
                         android:id="@+id/waiata1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="Waiata 1"
-                        android:textColor="@android:color/white"
-                        android:textAlignment="center"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_marginRight="5dp"
-                        android:textSize="18dp"/>
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center_horizontal"
+                        android:text="Waiata 1"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="18dp" />
 
 
                 </RelativeLayout>

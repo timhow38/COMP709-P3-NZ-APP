@@ -30,17 +30,17 @@
         android:layout_below="@id/relativeMarae1">
 
         <TextView
-            android:gravity="center"
             android:id="@+id/TV_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="25sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="E ko Te Kuratini o Waikato e "
             android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:text="E ko Te Kuratini o Waikato e "
+            android:textSize="25sp"
 
-            />
+            android:textStyle="bold" />
 
 
     </RelativeLayout>
@@ -53,19 +53,20 @@
         android:padding="10dp">
 
         <TextView
-            android:gravity="center"
             android:id="@+id/lyric1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:textAlignment="center"
-            android:textColor="@android:color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
             android:text="E kore koe e ngaro he kākano i ruia
 Kākano a te Kaahu e tū nei e
 Te kōpū Mānia, te ngāwhā whakatupu
-Ka tupu he tangata, rere ki te ao "/>
+Ka tupu he tangata, rere ki te ao "
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
     </RelativeLayout>
 
@@ -77,19 +78,20 @@ Ka tupu he tangata, rere ki te ao "/>
         android:padding="10dp">
 
         <TextView
-            android:gravity="center"
             android:id="@+id/lyric2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:textAlignment="center"
-            android:textColor="@android:color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
             android:text="Horahia Matariki, kūmea ngā waka
 Herea ki te pou o te aroha e
 Te Atairangikaahu, tāiri kei runga
-Ko Kīngi Tūheitia ki te whenua e "/>
+Ko Kīngi Tūheitia ki te whenua e "
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
     </RelativeLayout>
 
@@ -102,19 +104,20 @@ Ko Kīngi Tūheitia ki te whenua e "/>
         android:padding="10dp">
 
         <TextView
-            android:gravity="center"
             android:id="@+id/lyric3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            android:textAlignment="center"
-            android:textColor="@android:color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
             android:text="Piki ake Tāwhaki, tāhūhū matapū
 Ngā kete wānanga e toru e
 Whītikitia rā, ka turuturu iho
-E ko Te Kuratini o Waikato e "/>
+E ko Te Kuratini o Waikato e "
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
 
     </RelativeLayout>
 

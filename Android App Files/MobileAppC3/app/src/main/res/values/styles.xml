@@ -7,17 +7,11 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
-        <item name= "android:textViewStyle" > @style/RobotoTextViewStyle </item>
-        <item name= "android:buttonStyle" > @style/RobotoButtonStyle </item>
         <!-- Global Font -->
+        <item name= "android:textViewStyle" >@font/poppins_bold </item>
+        <item name= "android:buttonStyle" >@font/poppins_bold </item>
     </style>
-    <!-- Global Font -->
-    <style name= "RobotoTextViewStyle" parent= "android:Widget.TextView" >
-        <item name= "android:fontFamily" > sans-serif-black </item>
-    </style>
-    <style name= "RobotoButtonStyle" parent= "android:Widget.Holo.Button" >
-        <item name= "android:fontFamily" > sans-serif-medium </item>
-    </style>
+
 
     <!-- Global BottomNav Style -->
     <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light">

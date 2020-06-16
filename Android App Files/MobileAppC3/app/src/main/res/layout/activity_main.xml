@@ -21,6 +21,7 @@
         android:layout_height="wrap_content"
         android:theme="@style/BottomNavigationTheme"
         android:layout_alignParentBottom="true"
+        android:fontFamily="@font/poppins_bold"
         app:itemBackground="@color/nav_background"
         app:menu="@menu/bottom_navigation_view_menu" />
 
