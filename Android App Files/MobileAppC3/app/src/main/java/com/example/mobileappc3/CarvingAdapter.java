@@ -69,10 +69,10 @@ public class CarvingAdapter extends RecyclerView.Adapter<CarvingAdapter.ViewHold
 
         public ViewHolder(View itemView, onCarvingListener mOnCarvingListener){
             super(itemView);
-            carvName = itemView.findViewById(R.id.carvingName);
-            carvEngName = itemView.findViewById(R.id.carvingEngName);
-            carvDesc = itemView.findViewById(R.id.carvingDesc);
-            carvImageName = itemView.findViewById(R.id.carvingImage);
+            carvName = itemView.findViewById(R.id.text_carving_01);
+            carvEngName = itemView.findViewById(R.id.TV_title);
+            carvDesc = itemView.findViewById(R.id.lyric1);
+            carvImageName = itemView.findViewById(R.id.IM_marae);
 
             this.mOnCarvingListener = mOnCarvingListener;
 
