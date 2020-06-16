@@ -20,7 +20,7 @@ public class CarvingActivity_Info extends AppCompatActivity {
         carvName_msg = findViewById(R.id.carvingName);
         carvEngName_msg = findViewById(R.id.carvingEngName);
         carvDesc_msg = findViewById(R.id.carvingDesc);
-        carvImageName_msg = findViewById(R.id.carvingImage)
+        carvImageName_msg = findViewById(R.id.carvingImage);
 
         //Creates Intent
         Intent intent = getIntent();

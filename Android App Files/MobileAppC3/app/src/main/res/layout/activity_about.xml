@@ -28,8 +28,6 @@
 
     </RelativeLayout>
 
-
-
     <RelativeLayout
         android:id="@+id/TeamList"
         android:layout_width="wrap_content"
