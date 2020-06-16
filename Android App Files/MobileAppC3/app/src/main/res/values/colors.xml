@@ -4,8 +4,12 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
+
+    //Misc
     <color name="white">#FFFFFF</color>
     <color name="whiteTransparent">#80FFFFFF</color>
+    <color name="navBar">#0DFFFFFF</color>
+    <color name="titleBars">#003551</color>
 
 
     <!--  -->

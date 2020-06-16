@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/waiataFragment"
@@ -7,14 +7,15 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
     android:orientation="vertical"
-    android:scrollbars="vertical"
     tools:context=".WaiataFragment">
 
     <RelativeLayout
+        android:id="@+id/header"
+        android:layout_alignParentTop="true"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="15dp"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1">
 
         <TextView
@@ -47,373 +48,375 @@
             android:textColor="@android:color/white"
             android:textSize="20dp" />
 
-        <ImageView
-            android:id="@+id/account"
+        <ImageButton
+            android:id="@+id/about"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="15dp"
             android:layout_marginRight="15dp"
+            android:background="@drawable/rounded_back"
             android:src="@drawable/ic_person" />
 
     </RelativeLayout>
 
-    <GridLayout
+    <ScrollView
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/header"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="8"
-        android:alignmentMode="alignMargins"
-        android:columnCount="2"
-        android:columnOrderPreserved="false"
-        android:padding="14dp"
-        android:rowCount="4"
-        >
+        android:layout_height="match_parent">
 
-        <!-- //row 1
-         //Column 1-->
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:layout_below="@id/header"
+            android:layout_gravity="center"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:padding="14dp"
+            android:rowCount="4"
+            >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="144dp"
+                    android:layout_height="144dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="2"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@color/white"
+                    app:cardElevation="8dp"
+                    app:cardPreventCornerOverlap="false">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card1"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="20dp"
-            android:src="@color/white"
-            app:cardElevation="8dp"
-            app:cardPreventCornerOverlap="false">
+                    <RelativeLayout
+                        android:id="@+id/background1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/wintec_marae">
 
-            <RelativeLayout
-                android:id="@+id/background1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/wintec_marae">
+                        <RelativeLayout
+                            android:id="@+id/titleBar1"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/whiteTransparent"
+                            >
 
-                <RelativeLayout
-                    android:id="@+id/titleBar1"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="@color/whiteTransparent"
-                    >
-
-                    <TextView
-                        android:fontFamily="@font/poppins_bold"
-                        android:id="@+id/waiata1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="Waiata 1"
-                        android:textAlignment="center"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="5dp"
-                        android:textSize="18dp"/>
-
-
-                </RelativeLayout>
-
-        </RelativeLayout>
+                            <TextView
+                                android:fontFamily="@font/poppins_bold"
+                                android:id="@+id/waiata1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="Waiata 1"
+                                android:textAlignment="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:textSize="18dp"/>
 
 
-        </androidx.cardview.widget.CardView>
-        <!--row 1
-            Column 2-->
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="20dp"
-            android:src="@color/white"
-            app:cardElevation="8dp"
-            app:cardPreventCornerOverlap="false">
-
-            <RelativeLayout
-                android:id="@+id/background2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/wintec_marae">
-
-                <RelativeLayout
-                    android:id="@+id/titleBar2"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="@color/whiteTransparent"
-                    >
-
-                    <TextView
-                        android:fontFamily="@font/poppins_bold"
-                        android:id="@+id/waiata2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="Waiata 2"
-                        android:textAlignment="center"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="5dp"
-                        android:textSize="18dp"/>
-
+                        </RelativeLayout>
 
                 </RelativeLayout>
 
-            </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+                <!--row 1
+                    Column 2-->
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="144dp"
+                    android:layout_height="144dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@color/white"
+                    app:cardElevation="8dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <RelativeLayout
+                        android:id="@+id/background2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/wintec_marae">
+
+                        <RelativeLayout
+                            android:id="@+id/titleBar2"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/whiteTransparent"
+                            >
+
+                            <TextView
+                                android:fontFamily="@font/poppins_bold"
+                                android:id="@+id/waiata2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="Waiata 2"
+                                android:textAlignment="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:textSize="18dp"/>
 
 
-        </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card3"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="20dp"
-            android:src="@color/white"
-            app:cardElevation="8dp"
-            app:cardPreventCornerOverlap="false">
-
-            <RelativeLayout
-                android:id="@+id/background3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/wintec_marae">
-
-                <RelativeLayout
-                    android:id="@+id/titleBar3"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="@color/whiteTransparent"
-                    >
-
-                    <TextView
-                        android:fontFamily="@font/poppins_bold"
-                        android:id="@+id/waiata3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="Waiata 3"
-                        android:textAlignment="center"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="5dp"
-                        android:textSize="18dp"/>
+                    </RelativeLayout>
 
 
-                </RelativeLayout>
+                </androidx.cardview.widget.CardView>
 
-            </RelativeLayout>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="144dp"
+                    android:layout_height="144dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@color/white"
+                    app:cardElevation="8dp"
+                    app:cardPreventCornerOverlap="false">
 
+                    <RelativeLayout
+                        android:id="@+id/background3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/wintec_marae">
 
-        </androidx.cardview.widget.CardView>
+                        <RelativeLayout
+                            android:id="@+id/titleBar3"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/whiteTransparent"
+                            >
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card4"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="20dp"
-            android:src="@color/white"
-            app:cardElevation="8dp"
-            app:cardPreventCornerOverlap="false">
-
-            <RelativeLayout
-                android:id="@+id/background4"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/wintec_marae">
-
-                <RelativeLayout
-                    android:id="@+id/titleBar4"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="@color/whiteTransparent"
-                    >
-
-                    <TextView
-                        android:fontFamily="@font/poppins_bold"
-                        android:id="@+id/waiata4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="Waiata 4"
-                        android:textAlignment="center"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="5dp"
-                        android:textSize="18dp"/>
-
-                </RelativeLayout>
-
-            </RelativeLayout>
+                            <TextView
+                                android:fontFamily="@font/poppins_bold"
+                                android:id="@+id/waiata3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="Waiata 3"
+                                android:textAlignment="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:textSize="18dp"/>
 
 
-        </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card5"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="20dp"
-            android:src="@color/white"
-            app:cardElevation="8dp"
-            app:cardPreventCornerOverlap="false">
-
-            <RelativeLayout
-                android:id="@+id/background5"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/wintec_marae">
-
-                <RelativeLayout
-                    android:id="@+id/titleBar5"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="@color/whiteTransparent"
-                    >
-
-                    <TextView
-                        android:fontFamily="@font/poppins_bold"
-                        android:id="@+id/waiata5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="Waiata 5"
-                        android:textAlignment="center"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="5dp"
-                        android:textSize="18dp"/>
+                    </RelativeLayout>
 
 
-                </RelativeLayout>
+                </androidx.cardview.widget.CardView>
 
-            </RelativeLayout>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="144dp"
+                    android:layout_height="144dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@color/white"
+                    app:cardElevation="8dp"
+                    app:cardPreventCornerOverlap="false">
 
+                    <RelativeLayout
+                        android:id="@+id/background4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/wintec_marae">
 
-        </androidx.cardview.widget.CardView>
+                        <RelativeLayout
+                            android:id="@+id/titleBar4"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/whiteTransparent"
+                            >
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card6"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="20dp"
-            android:src="@color/white"
-            app:cardElevation="8dp"
-            app:cardPreventCornerOverlap="false">
+                            <TextView
+                                android:fontFamily="@font/poppins_bold"
+                                android:id="@+id/waiata4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="Waiata 4"
+                                android:textAlignment="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:textSize="18dp"/>
 
-            <RelativeLayout
-                android:id="@+id/background6"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/wintec_marae">
+                        </RelativeLayout>
 
-                <RelativeLayout
-                    android:id="@+id/titleBar6"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="@color/whiteTransparent"
-                    >
-
-                    <TextView
-                        android:fontFamily="@font/poppins_bold"
-                        android:id="@+id/waiata6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="Waiata 6"
-                        android:textAlignment="center"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="5dp"
-                        android:textSize="18dp"/>
-
-
-                </RelativeLayout>
-
-            </RelativeLayout>
+                    </RelativeLayout>
 
 
-        </androidx.cardview.widget.CardView>
+                </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card7"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="20dp"
-            android:src="@color/white"
-            app:cardElevation="8dp"
-            app:cardPreventCornerOverlap="false">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card5"
+                    android:layout_width="144dp"
+                    android:layout_height="144dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@color/white"
+                    app:cardElevation="8dp"
+                    app:cardPreventCornerOverlap="false">
 
-            <RelativeLayout
-                android:id="@+id/background7"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/wintec_marae">
+                    <RelativeLayout
+                        android:id="@+id/background5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/wintec_marae">
 
-                <RelativeLayout
-                    android:id="@+id/titleBar7"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:layout_alignParentBottom="true"
-                    android:background="@color/whiteTransparent"
-                    >
+                        <RelativeLayout
+                            android:id="@+id/titleBar5"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/whiteTransparent"
+                            >
 
-                    <TextView
-                        android:fontFamily="@font/poppins_bold"
-                        android:id="@+id/waiata7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:text="Waiata 7"
-                        android:textAlignment="center"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_marginRight="5dp"
-                        android:textSize="18dp"/>
-
-
-                </RelativeLayout>
-
-            </RelativeLayout>
+                            <TextView
+                                android:fontFamily="@font/poppins_bold"
+                                android:id="@+id/waiata5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="Waiata 5"
+                                android:textAlignment="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:textSize="18dp"/>
 
 
-        </androidx.cardview.widget.CardView>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card6"
+                    android:layout_width="144dp"
+                    android:layout_height="144dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@color/white"
+                    app:cardElevation="8dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <RelativeLayout
+                        android:id="@+id/background6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/wintec_marae">
+
+                        <RelativeLayout
+                            android:id="@+id/titleBar6"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/whiteTransparent"
+                            >
+
+                            <TextView
+                                android:fontFamily="@font/poppins_bold"
+                                android:id="@+id/waiata6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="Waiata 6"
+                                android:textAlignment="center"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:textSize="18dp"/>
 
 
-    </GridLayout>
+                        </RelativeLayout>
+
+                    </RelativeLayout>
 
 
-</LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card7"
+                    android:layout_width="144dp"
+                    android:layout_height="144dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:src="@color/white"
+                    app:cardElevation="8dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <RelativeLayout
+                        android:id="@+id/background7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/wintec_marae">
+
+                        <RelativeLayout
+                            android:id="@+id/titleBar7"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/whiteTransparent"
+                            >
+
+                            <TextView
+                                android:fontFamily="@font/poppins_bold"
+                                android:id="@+id/waiata7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="Waiata 7"
+                                android:textAlignment="center"
+                                android:layout_centerInParent="true"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:textSize="18dp"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

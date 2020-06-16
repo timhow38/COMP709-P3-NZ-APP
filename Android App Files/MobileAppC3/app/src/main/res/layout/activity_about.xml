@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:fitsSystemWindows="true"
+    tools:context=".About"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_title"
+        >
+
+        <TextView
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="About Us"
+            android:textColor="@color/white"
+            android:textSize="50dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ic_about"
+        android:layout_below="@id/header"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="202dp"
+        android:layout_height="202dp"
+        android:src="@drawable/ic_person"
+        />
+
+    <TextView
+        android:id="@+id/blurb"
+        android:layout_below="@id/ic_about"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textAlignment="center"
+        android:text="Some Text goes here. Some Text goes here. Some Text goes here. Some Text goes here. Some Text goes here. Some Text goes here. Some Text goes here. Some Text goes here."
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/blurb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_back"
+        >
+
+        <TextView
+            android:id="@+id/team"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="The Team"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+        <ScrollView
+            android:layout_below="@id/team"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+
+                <RelativeLayout
+                    android:id="@+id/ray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ray_photo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ray"
+                        />
+
+                    <TextView
+                        android:id="@+id/ray_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ray Smith"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_toRightOf="@id/ray_photo"
+                        android:textColor="@color/white"
+                        android:textSize="22dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/ray_roles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Group Leader, UI/UX Designer, Software Developer"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_toRightOf="@id/ray_photo"
+                        android:layout_below="@id/ray_name"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tim"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/tim_photo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ray"
+                        />
+
+                    <TextView
+                        android:id="@+id/tim_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Timothy Howard"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_toRightOf="@id/tim_photo"
+                        android:textColor="@color/white"
+                        android:textSize="22dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tim_roles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UI/UX Designer, Software Developer"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_toRightOf="@id/tim_photo"
+                        android:layout_below="@id/tim_name"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rewa"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/rewa_photo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ray"
+                        />
+
+                    <TextView
+                        android:id="@+id/rewa_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Timothy Howard"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_toRightOf="@id/rewa_photo"
+                        android:textColor="@color/white"
+                        android:textSize="22dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/rewa_roles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UI/UX Designer, Software Developer"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_toRightOf="@id/rewa_photo"
+                        android:layout_below="@id/rewa_name"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lee"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/lee_photo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ray"
+                        />
+
+                    <TextView
+                        android:id="@+id/lee_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Timothy Howard"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_toRightOf="@id/lee_photo"
+                        android:textColor="@color/white"
+                        android:textSize="22dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/lee_roles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UI/UX Designer, Software Developer"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_toRightOf="@id/lee_photo"
+                        android:layout_below="@id/lee_name"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/Arielle"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/Arielle_photo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ray"
+                        />
+
+                    <TextView
+                        android:id="@+id/Arielle_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Timothy Howard"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_toRightOf="@id/Arielle_photo"
+                        android:textColor="@color/white"
+                        android:textSize="22dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/Arielle_roles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UI/UX Designer, Software Developer"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_toRightOf="@id/Arielle_photo"
+                        android:layout_below="@id/Arielle_name"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/jin"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/jin_photo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ray"
+                        />
+
+                    <TextView
+                        android:id="@+id/jin_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Timothy Howard"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_toRightOf="@id/jin_photo"
+                        android:textColor="@color/white"
+                        android:textSize="22dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/jin_roles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UI/UX Designer, Software Developer"
+                        android:fontFamily="@font/poppins_regular"
+                        android:layout_toRightOf="@id/jin_photo"
+                        android:layout_below="@id/jin_name"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:layout_marginRight="5dp"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

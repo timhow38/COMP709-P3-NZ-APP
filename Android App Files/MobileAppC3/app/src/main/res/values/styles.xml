@@ -4,14 +4,16 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
 
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/navBar</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
 
         <!-- Global Font -->
         <item name= "android:textViewStyle" >@font/poppins_bold </item>
         <item name= "android:buttonStyle" >@font/poppins_bold </item>
     </style>
-
+    <!-- Global Font -->
 
     <!-- Global BottomNav Style -->
     <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light">
