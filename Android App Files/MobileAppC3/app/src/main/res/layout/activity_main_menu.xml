@@ -23,7 +23,9 @@
     android:theme="@style/BottomNavigationTheme"
     android:layout_alignParentBottom="true"
     app:itemBackground="@color/nav_background"
-    app:menu="@menu/bottom_navigation_view_menu" />
+    app:menu="@menu/bottom_navigation_view_menu"
+
+    />
 
 </RelativeLayout>
 

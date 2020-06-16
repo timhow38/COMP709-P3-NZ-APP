@@ -14,14 +14,14 @@
         android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_title"
-        >
+        android:background="@drawable/rounded_back_black">
 
         <TextView
-            android:layout_marginTop="13dp"
-            android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_bold"
             android:gravity="center"
             android:text="About Us"
             android:textColor="@color/white"
@@ -41,14 +41,17 @@
 
     <TextView
         android:id="@+id/blurb"
-        android:layout_below="@id/ic_about"
-        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/ic_about"
         android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="50dp"
-        android:textAlignment="center"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_horizontal"
         android:text="Some Text goes here. Some Text goes here. Some Text goes here. Some Text goes here. Some Text goes here. Some Text goes here. Some Text goes here. Some Text goes here."
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="15dp" />
 
@@ -64,10 +67,11 @@
 
         <TextView
             android:id="@+id/team"
-            android:layout_marginTop="13dp"
-            android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/poppins_bold"
             android:gravity="center"
             android:text="The Team"
             android:textColor="@color/white"
@@ -140,7 +144,7 @@
                         android:id="@+id/tim_photo"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/ray"
+                        android:src="@drawable/img_tim"
                         />
 
                     <TextView
