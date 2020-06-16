@@ -62,7 +62,7 @@
             android:textAlignment="center"
             android:gravity="center_horizontal"
             android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_height="30dp"
             android:layout_below="@+id/recommendtext1"
             android:layout_toRightOf="@+id/recommendimg1"
             android:text="Play"
@@ -70,7 +70,7 @@
             android:textColor="@color/white"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/btn_play"
+            android:background="@drawable/btn_vocal"
              />
 
 
@@ -79,7 +79,7 @@
             android:textAlignment="center"
             android:gravity="center_horizontal"
             android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_height="30dp"
             android:layout_below="@+id/recommendtext1"
             android:layout_toRightOf="@+id/recommendplay1"
             android:text="More Info"
@@ -130,7 +130,7 @@
             android:textAlignment="center"
             android:gravity="center_horizontal"
             android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_height="30dp"
             android:layout_below="@+id/recommendtext2"
             android:layout_toRightOf="@+id/recommendimg2"
             android:layout_marginStart="10dp"
@@ -138,14 +138,14 @@
             android:fontFamily="@font/poppins_bold"
             android:textColor="@color/white"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/btn_play"/>
+            android:background="@drawable/btn_vocal"/>
 
         <Button
             android:id="@+id/recommendmoreinfo2"
             android:textAlignment="center"
             android:gravity="center_horizontal"
             android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_height="30dp"
             android:layout_below="@+id/recommendtext2"
             android:layout_toRightOf="@+id/recommendplay2"
             android:text="More Info"
@@ -195,7 +195,7 @@
             android:textAlignment="center"
             android:gravity="center_horizontal"
             android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_height="30dp"
             android:layout_below="@+id/recommendtext3"
             android:layout_toRightOf="@+id/recommendimg3"
             android:text="Play"
@@ -203,14 +203,14 @@
             android:textColor="@color/white"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/btn_play"/>
+            android:background="@drawable/btn_vocal"/>
 
         <Button
             android:id="@+id/recommendmoreinfo3"
             android:textAlignment="center"
             android:gravity="center_horizontal"
             android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_height="30dp"
             android:layout_below="@+id/recommendtext3"
             android:layout_toRightOf="@+id/recommendplay3"
             android:text="More Info"
@@ -260,7 +260,7 @@
             android:textAlignment="center"
             android:gravity="center_horizontal"
             android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_height="30dp"
             android:layout_below="@+id/recommendtext4"
             android:layout_toRightOf="@+id/recommendimg4"
             android:text="Play"
@@ -268,12 +268,12 @@
             android:textColor="@color/white"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/btn_play"/>
+            android:background="@drawable/btn_vocal"/>
 
         <Button
             android:id="@+id/recommendmoreinfo4"
             android:layout_width="100dp"
-            android:layout_height="50dp"
+            android:layout_height="30dp"
             android:layout_below="@+id/recommendtext4"
             android:layout_toRightOf="@+id/recommendplay4"
             android:text="More Info"

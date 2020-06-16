@@ -17,6 +17,7 @@
 
     <!-- Global BottomNav Style -->
     <style name="BottomNavigationTheme" parent="Theme.AppCompat.Light">
+        <item name="android:background">@color/nav_background</item>
         <item name="colorPrimary">@color/nav_icon_active</item>
         <item name="android:textColorSecondary">@color/white</item>
     </style>
