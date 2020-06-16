@@ -23,9 +23,9 @@
 
 
     <RelativeLayout
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="-15dp"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:id="@+id/RelativeTitle1"
         android:layout_below="@id/relativeMarae1">
 
@@ -39,8 +39,8 @@
             android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="25sp"
-
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:background="@drawable/rounded_back_black"/>
 
 
     </RelativeLayout>
@@ -140,26 +140,32 @@ E ko Te Kuratini o Waikato e "
         <Button
             android:id="@+id/Sing"
             android:text="Sing"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="83dp"
-            android:layout_marginLeft="83dp"
-            android:layout_marginTop="4dp" />
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/btn_play"/>
 
         <Button
             android:id="@+id/non_vocal"
             android:text="Non-Vocal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="237dp"
             android:layout_marginLeft="237dp"
-            android:layout_marginTop="2dp" />
+            android:layout_marginTop="2dp"
+            android:background="@drawable/btn_play"/>
 
     </RelativeLayout>
 
