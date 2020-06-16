@@ -14,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_back_black">
+        android:background="@drawable/rounded_title">
 
         <TextView
             android:layout_width="match_parent"
@@ -28,21 +28,7 @@
 
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/blurb"
-        android:layout_centerHorizontal="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/TeamList"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="50dp"
-        android:fontFamily="@font/poppins_medium"
-        android:gravity="center_horizontal"
-        android:text="Some Text goes here. Some Text goes here. Some Text goes here. Some Text goes here. Some Text goes here. Some Text goes here. Some Text goes here. Some Text goes here."
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="15dp" />
+
 
     <RelativeLayout
         android:id="@+id/TeamList"
@@ -54,8 +40,21 @@
         android:layout_marginRight="10dp"
         android:background="@drawable/rounded_back">
 
+        <TextView
+            android:id="@+id/team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="The Team"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="40dp"
+            android:fontFamily="@font/poppins_bold"
+            />
+
 
         <ScrollView
+            android:layout_below="@id/team"
             android:layout_width="match_parent"
             android:layout_height="306dp"
             android:layout_marginTop="5dp"
@@ -67,20 +66,21 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:orientation="vertical"
-
                 >
 
                 <RelativeLayout
                     android:id="@+id/ray"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/rounded_back_black">
+                    android:layout_marginBottom="5dp"
+                    >
 
                     <ImageView
                         android:id="@+id/ray_photo"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/ray" />
+                        android:src="@drawable/ray"
+                        android:layout_marginRight="5dp" />
 
                     <TextView
                         android:id="@+id/ray_name"
@@ -112,20 +112,16 @@
                     android:id="@+id/tim"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp">
-
-                    <ImageView
-                        android:id="@+id/tim_photo"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/img_tim" />
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    >
 
                     <TextView
                         android:id="@+id/tim_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
-                        android:layout_toRightOf="@id/tim_photo"
+                        android:layout_toLeftOf="@id/tim_photo"
                         android:fontFamily="@font/poppins_bold"
                         android:text="Timothy Howard"
                         android:textColor="@color/white"
@@ -137,11 +133,17 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/tim_name"
                         android:layout_marginRight="5dp"
-                        android:layout_toRightOf="@id/tim_photo"
                         android:fontFamily="@font/poppins_regular"
                         android:text="UI/UX Designer, Software Developer"
                         android:textColor="@color/white"
                         android:textSize="15dp" />
+
+                    <ImageView
+                        android:layout_toRightOf="@id/tim_roles"
+                        android:id="@+id/tim_photo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/img_tim" />
 
                 </RelativeLayout>
 
@@ -150,13 +152,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:background="@drawable/rounded_back_black">
+                    android:layout_marginBottom="5dp" >
 
                     <ImageView
                         android:id="@+id/rewa_photo"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/ray" />
+                        android:src="@drawable/rewa"
+                        android:layout_marginRight="5dp" />
 
                     <TextView
                         android:id="@+id/rewa_name"
@@ -165,7 +168,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_toRightOf="@id/rewa_photo"
                         android:fontFamily="@font/poppins_bold"
-                        android:text="Timothy Howard"
+                        android:text="Rewa Hill"
                         android:textColor="@color/white"
                         android:textSize="22dp" />
 
@@ -177,7 +180,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_toRightOf="@id/rewa_photo"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="UI/UX Designer, Software Developer"
+                        android:text="Multimedia, Software Developer"
                         android:textColor="@color/white"
                         android:textSize="15dp" />
 
@@ -187,22 +190,18 @@
                     android:id="@+id/lee"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp">
-
-                    <ImageView
-                        android:id="@+id/lee_photo"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/ray" />
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    >
 
                     <TextView
                         android:id="@+id/lee_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
-                        android:layout_toRightOf="@id/lee_photo"
+                        android:layout_toLeftOf="@id/lee_photo"
                         android:fontFamily="@font/poppins_bold"
-                        android:text="Timothy Howard"
+                        android:text="Lee-Reign Ihaka"
                         android:textColor="@color/white"
                         android:textSize="22dp" />
 
@@ -211,12 +210,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/lee_name"
-                        android:layout_marginRight="5dp"
-                        android:layout_toRightOf="@id/lee_photo"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginRight="10dp"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="UI/UX Designer, Software Developer"
+                        android:text="Software Developer"
                         android:textColor="@color/white"
                         android:textSize="15dp" />
+
+                    <ImageView
+                        android:layout_toRightOf="@id/lee_roles"
+                        android:id="@+id/lee_photo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/lee" />
 
                 </RelativeLayout>
 
@@ -225,13 +231,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:background="@drawable/rounded_back_black">
+                    android:layout_marginBottom="5dp"
+                    >
 
                     <ImageView
                         android:id="@+id/Arielle_photo"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/ray" />
+                        android:src="@drawable/arielle"
+                        android:layout_marginRight="5dp" />
 
                     <TextView
                         android:id="@+id/Arielle_name"
@@ -240,7 +248,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_toRightOf="@id/Arielle_photo"
                         android:fontFamily="@font/poppins_bold"
-                        android:text="Timothy Howard"
+                        android:text="Arielle Parai"
                         android:textColor="@color/white"
                         android:textSize="22dp" />
 
@@ -252,7 +260,7 @@
                         android:layout_marginRight="5dp"
                         android:layout_toRightOf="@id/Arielle_photo"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="UI/UX Designer, Software Developer"
+                        android:text="Multimedia, Data Collection"
                         android:textColor="@color/white"
                         android:textSize="15dp" />
 
@@ -262,22 +270,18 @@
                     android:id="@+id/jin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp">
-
-                    <ImageView
-                        android:id="@+id/jin_photo"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:src="@drawable/ray" />
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    >
 
                     <TextView
                         android:id="@+id/jin_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="5dp"
-                        android:layout_toRightOf="@id/jin_photo"
+                        android:layout_toLeftOf="@id/jin_photo"
                         android:fontFamily="@font/poppins_bold"
-                        android:text="Timothy Howard"
+                        android:text="Jack Teo"
                         android:textColor="@color/white"
                         android:textSize="22dp" />
 
@@ -287,11 +291,18 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/jin_name"
                         android:layout_marginRight="5dp"
-                        android:layout_toRightOf="@id/jin_photo"
+                        android:layout_marginLeft="110dp"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="UI/UX Designer, Software Developer"
+                        android:text="Software Developer"
                         android:textColor="@color/white"
                         android:textSize="15dp" />
+
+                    <ImageView
+                        android:layout_toRightOf="@id/jin_roles"
+                        android:id="@+id/jin_photo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/jin" />
 
                 </RelativeLayout>
 
@@ -300,5 +311,31 @@
         </ScrollView>
 
     </RelativeLayout>
+
+    <ScrollView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/TeamList"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <TextView
+            android:id="@+id/blurb"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TeamList"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_horizontal"
+            android:text="@string/about"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+    </ScrollView>
+
+
 
 </RelativeLayout>

@@ -13,4 +13,6 @@
     <string name="text_carving_03">Carving 03</string>
     <string name="text_carving_04">Carving 04</string>
     <string name="text_carving_05">Carving 05</string>
+
+    <string name="about">We are students of Waikato Institute of Technology completing our final year of Software Engineering. This app is dedicated to educating students, tutors and the general public on Wintec\'s Culture and Customs. Our team has put tremendous effort into making this possible and being our first time collaborating in a mobile development. This has bought many challenges on and insights to development. The team put our strengths and skills together to proudly present this app.</string>
 </resources>
