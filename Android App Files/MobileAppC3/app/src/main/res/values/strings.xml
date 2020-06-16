@@ -7,4 +7,10 @@
     <string name="fragment_02">Marae</string>
 
     <string name="act_carving_title">Carvings</string>
+
+    <string name="text_carving_01">Carving 01</string>
+    <string name="text_carving_02">Carving 02</string>
+    <string name="text_carving_03">Carving 03</string>
+    <string name="text_carving_04">Carving 04</string>
+    <string name="text_carving_05">Carving 05</string>
 </resources>

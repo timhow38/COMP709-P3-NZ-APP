@@ -71,12 +71,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
-                    android:orientation="vertical"
-
-                    >
+                    android:orientation="vertical">
 
                     <RelativeLayout
-                        android:id="@+id/carving_1"
+                        android:id="@+id/carving_01"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
                         android:background="@drawable/wintec_marae">
@@ -89,7 +87,167 @@
                             android:background="@color/act_box">
 
                             <TextView
-                                android:id="@+id/text_carving_1"
+                                android:id="@+id/text_carving_01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_horizontal"
+                                android:text="@string/text_carving_01"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="18dp" />
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/carving_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/wintec_marae">
+
+                        <RelativeLayout
+                            android:id="@+id/title_carving_02"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/act_box">
+
+                            <TextView
+                                android:id="@+id/text_carving_02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_horizontal"
+                                android:text="@string/text_carving_02"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="18dp" />
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/carving_03"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/wintec_marae">
+
+                        <RelativeLayout
+                            android:id="@+id/title_carving_03"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/act_box">
+
+                            <TextView
+                                android:id="@+id/text_carving_03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_horizontal"
+                                android:text="@string/text_carving_03"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="18dp" />
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/carving_04"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/wintec_marae">
+
+                        <RelativeLayout
+                            android:id="@+id/title_carving_04"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/act_box">
+
+                            <TextView
+                                android:id="@+id/text_carving_04"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_horizontal"
+                                android:text="@string/text_carving_04"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="18dp" />
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/carving_05"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/wintec_marae">
+
+                        <RelativeLayout
+                            android:id="@+id/title_carving_05"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/act_box">
+
+                            <TextView
+                                android:id="@+id/text_carving_05"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:gravity="center_horizontal"
+                                android:text="@string/text_carving_05"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/white"
+                                android:textSize="18dp" />
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/carving_06"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/wintec_marae">
+
+                        <RelativeLayout
+                            android:id="@+id/title_carving_06"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/act_box">
+
+                            <TextView
+                                android:id="@+id/text_carving_06"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
@@ -108,180 +266,20 @@
                     </RelativeLayout>
 
                     <RelativeLayout
-                        android:id="@+id/carving_2"
+                        android:id="@+id/carving_07"
                         android:layout_width="match_parent"
                         android:layout_height="150dp"
                         android:background="@drawable/wintec_marae">
 
                         <RelativeLayout
-                            android:id="@+id/title_carving_2"
+                            android:id="@+id/title_carving_07"
                             android:layout_width="match_parent"
                             android:layout_height="30dp"
                             android:layout_alignParentBottom="true"
                             android:background="@color/act_box">
 
                             <TextView
-                                android:id="@+id/text_carving_2"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:layout_centerVertical="true"
-                                android:layout_marginRight="5dp"
-                                android:fontFamily="@font/poppins_bold"
-                                android:gravity="center_horizontal"
-                                android:text="Waiata 1"
-                                android:textAlignment="center"
-                                android:textColor="@android:color/white"
-                                android:textSize="18dp" />
-
-
-                        </RelativeLayout>
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:id="@+id/background1"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:background="@drawable/wintec_marae">
-
-                        <RelativeLayout
-                            android:id="@+id/titleBar1"
-                            android:layout_width="match_parent"
-                            android:layout_height="30dp"
-                            android:layout_alignParentBottom="true"
-                            android:background="@color/act_box">
-
-                            <TextView
-                                android:id="@+id/waiata1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:layout_centerVertical="true"
-                                android:layout_marginRight="5dp"
-                                android:fontFamily="@font/poppins_bold"
-                                android:gravity="center_horizontal"
-                                android:text="Waiata 1"
-                                android:textAlignment="center"
-                                android:textColor="@android:color/white"
-                                android:textSize="18dp" />
-
-
-                        </RelativeLayout>
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:id="@+id/background1"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:background="@drawable/wintec_marae">
-
-                        <RelativeLayout
-                            android:id="@+id/titleBar1"
-                            android:layout_width="match_parent"
-                            android:layout_height="30dp"
-                            android:layout_alignParentBottom="true"
-                            android:background="@color/act_box">
-
-                            <TextView
-                                android:id="@+id/waiata1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:layout_centerVertical="true"
-                                android:layout_marginRight="5dp"
-                                android:fontFamily="@font/poppins_bold"
-                                android:gravity="center_horizontal"
-                                android:text="Waiata 1"
-                                android:textAlignment="center"
-                                android:textColor="@android:color/white"
-                                android:textSize="18dp" />
-
-
-                        </RelativeLayout>
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:id="@+id/background1"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:background="@drawable/wintec_marae">
-
-                        <RelativeLayout
-                            android:id="@+id/titleBar1"
-                            android:layout_width="match_parent"
-                            android:layout_height="30dp"
-                            android:layout_alignParentBottom="true"
-                            android:background="@color/act_box">
-
-                            <TextView
-                                android:id="@+id/waiata1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:layout_centerVertical="true"
-                                android:layout_marginRight="5dp"
-                                android:fontFamily="@font/poppins_bold"
-                                android:gravity="center_horizontal"
-                                android:text="Waiata 1"
-                                android:textAlignment="center"
-                                android:textColor="@android:color/white"
-                                android:textSize="18dp" />
-
-
-                        </RelativeLayout>
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:id="@+id/background1"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:background="@drawable/wintec_marae">
-
-                        <RelativeLayout
-                            android:id="@+id/titleBar1"
-                            android:layout_width="match_parent"
-                            android:layout_height="30dp"
-                            android:layout_alignParentBottom="true"
-                            android:background="@color/act_box">
-
-                            <TextView
-                                android:id="@+id/waiata1"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:layout_centerVertical="true"
-                                android:layout_marginRight="5dp"
-                                android:fontFamily="@font/poppins_bold"
-                                android:gravity="center_horizontal"
-                                android:text="Waiata 1"
-                                android:textAlignment="center"
-                                android:textColor="@android:color/white"
-                                android:textSize="18dp" />
-
-
-                        </RelativeLayout>
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:id="@+id/background1"
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:background="@drawable/wintec_marae">
-
-                        <RelativeLayout
-                            android:id="@+id/titleBar1"
-                            android:layout_width="match_parent"
-                            android:layout_height="30dp"
-                            android:layout_alignParentBottom="true"
-                            android:background="@color/act_box">
-
-                            <TextView
-                                android:id="@+id/waiata1"
+                                android:id="@+id/text_carving_07"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
