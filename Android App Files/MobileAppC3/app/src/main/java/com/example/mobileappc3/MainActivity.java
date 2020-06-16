@@ -43,6 +43,6 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 delayCallback.afterDelay();
             }
-        }, 7 * 1000); // afterDelay will be executed after (secs*10) milliseconds.
+        }, 4 * 1000); // afterDelay will be executed after (secs*10) milliseconds.
     }
 }
