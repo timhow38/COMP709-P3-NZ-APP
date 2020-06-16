@@ -4,20 +4,9 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
 
-
-    //Misc
     <color name="white">#FFFFFF</color>
-    <color name="black">#000000</color>
-    <color name="whiteTransparent">#80FFFFFF</color>
-    <color name="navBar">#0DFFFFFF</color>
-    <color name="titleBars">#003551</color>
 
-
-    <!--  -->
-    <color name="act_box">#043E5C</color>
     <!-- NAV Background -->
     <color name="nav_icon_active">#FFD500</color>
-    <color name="nav_background">#002E46</color>
-
-
+    <color name="nav_background">#043E5C</color>
 </resources>
