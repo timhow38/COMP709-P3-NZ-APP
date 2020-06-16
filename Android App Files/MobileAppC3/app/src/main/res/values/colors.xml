@@ -14,7 +14,7 @@
 
 
     <!--  -->
-    <color name="act_carving_box">#043E5C</color>
+    <color name="act_box">#043E5C</color>
     <!-- NAV Background -->
     <color name="nav_icon_active">#FFD500</color>
     <color name="nav_background">#043E5C</color>

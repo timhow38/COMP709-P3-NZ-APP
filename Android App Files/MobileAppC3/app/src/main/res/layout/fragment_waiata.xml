@@ -104,11 +104,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="30dp"
                             android:layout_alignParentBottom="true"
-                            android:background="@color/whiteTransparent"
+                            android:background="@color/act_box"
                             >
 
                             <TextView
                                 android:fontFamily="@font/poppins_bold"
+                                android:textColor="@color/white"
                                 android:id="@+id/waiata1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -154,11 +155,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="30dp"
                             android:layout_alignParentBottom="true"
-                            android:background="@color/whiteTransparent"
+                            android:background="@color/act_box"
                             >
 
                             <TextView
                                 android:fontFamily="@font/poppins_bold"
+                                android:textColor="@color/white"
                                 android:id="@+id/waiata2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -202,11 +204,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="30dp"
                             android:layout_alignParentBottom="true"
-                            android:background="@color/whiteTransparent"
+                            android:background="@color/act_box"
                             >
 
                             <TextView
                                 android:fontFamily="@font/poppins_bold"
+                                android:textColor="@color/white"
                                 android:id="@+id/waiata3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -250,11 +253,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="30dp"
                             android:layout_alignParentBottom="true"
-                            android:background="@color/whiteTransparent"
+                            android:background="@color/act_box"
                             >
 
                             <TextView
                                 android:fontFamily="@font/poppins_bold"
+                                android:textColor="@color/white"
                                 android:id="@+id/waiata4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -297,11 +301,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="30dp"
                             android:layout_alignParentBottom="true"
-                            android:background="@color/whiteTransparent"
+                            android:background="@color/act_box"
                             >
 
                             <TextView
                                 android:fontFamily="@font/poppins_bold"
+                                android:textColor="@color/white"
                                 android:id="@+id/waiata5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -344,11 +349,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="30dp"
                             android:layout_alignParentBottom="true"
-                            android:background="@color/whiteTransparent"
+                            android:background="@color/act_box"
                             >
 
                             <TextView
                                 android:fontFamily="@font/poppins_bold"
+                                android:textColor="@color/white"
                                 android:id="@+id/waiata6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -392,11 +398,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="30dp"
                             android:layout_alignParentBottom="true"
-                            android:background="@color/whiteTransparent"
+                            android:background="@color/act_box"
                             >
 
                             <TextView
                                 android:fontFamily="@font/poppins_bold"
+                                android:textColor="@color/white"
                                 android:id="@+id/waiata7"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"

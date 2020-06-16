@@ -74,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_alignParentBottom="true"
-                    android:background="@color/act_carving_box"
+                    android:background="@color/act_box"
                     >
 
                     <TextView
@@ -125,7 +125,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_alignParentBottom="true"
-                    android:background="@color/act_carving_box"
+                    android:background="@color/act_box"
                     >
 
                     <TextView
@@ -174,7 +174,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_alignParentBottom="true"
-                    android:background="@color/act_carving_box"
+                    android:background="@color/act_box"
                     >
 
                     <TextView
@@ -223,7 +223,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_alignParentBottom="true"
-                    android:background="@color/act_carving_box"
+                    android:background="@color/act_box"
                     >
 
                     <TextView
@@ -271,7 +271,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_alignParentBottom="true"
-                    android:background="@color/act_carving_box"
+                    android:background="@color/act_box"
                     >
 
                     <TextView
@@ -320,7 +320,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_alignParentBottom="true"
-                    android:background="@color/act_carving_box"
+                    android:background="@color/act_box"
                     >
 
                     <TextView
@@ -370,7 +370,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_alignParentBottom="true"
-                    android:background="@color/act_carving_box"
+                    android:background="@color/act_box"
                     >
 
                     <TextView
