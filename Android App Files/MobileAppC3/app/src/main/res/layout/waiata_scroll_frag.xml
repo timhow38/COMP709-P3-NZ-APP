@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_splash"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -77,17 +78,21 @@
         <Button
             android:id="@+id/recommendmoreinfo1"
             android:textAlignment="center"
-            android:gravity="center_horizontal"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_below="@+id/recommendtext1"
             android:layout_toRightOf="@+id/recommendplay1"
-            android:text="More Info"
             android:fontFamily="@font/poppins_bold"
             android:textColor="@color/white"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/btn_vocal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="More Info"
+            />
 
 
     </RelativeLayout>
