@@ -16,18 +16,14 @@ public class Carving implements Parcelable {
     @ColumnInfo(name = "carv_Name")
     private String carvName;
 
-    @ColumnInfo(name = "carv_engName")
-    private String carvEngName;
-
     @ColumnInfo(name = "carv_Desc")
     private String carvDesc;
 
     @ColumnInfo(name = "carv_imageName")
     private String carvImageName;
 
-    public Carving(String carvName, String carvEngName, String carvDesc, String carvImageName){
+    public Carving(String carvName, String carvDesc, String carvImageName){
         this.carvName = carvName;
-        this.carvEngName = carvEngName;
         this.carvDesc = carvDesc;
         this.carvImageName = carvImageName;
     }
@@ -38,7 +34,6 @@ public class Carving implements Parcelable {
     protected Carving(Parcel in){
         id = in.readInt();
         carvName = in.readString();
-        carvEngName = in.readString();
         carvDesc = in.readString();
         carvImageName = in.readString();
     }
@@ -71,14 +66,6 @@ public class Carving implements Parcelable {
         this.carvName = carvName;
     }
 
-    public String getCarvEngName() {
-        return carvEngName;
-    }
-
-    public void setCarvEngName(String carvEngName) {
-        this.carvEngName = carvEngName;
-    }
-
     public String getCarvDesc() {
         return carvDesc;
     }
@@ -99,7 +86,6 @@ public class Carving implements Parcelable {
     public String toString(){
         return "Carving(" +
                 "carvName='" + carvName + '\'' +
-                ", carvEngName='" + carvEngName + '\'' +
                 ", carvDesc='" + carvDesc + '\'' +
                 ", carvImageName='" + carvImageName + '\'' +
                 '}';
@@ -114,7 +100,6 @@ public class Carving implements Parcelable {
     public void writeToParcel(Parcel parcel, int i) {
         parcel.writeInt(id);
         parcel.writeString(carvName);
-        parcel.writeString(carvEngName);
         parcel.writeString(carvDesc);
         parcel.writeString(carvImageName);
 

@@ -1,7 +1,6 @@
 package com.example.mobileappc3;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class CarvingAdapter extends RecyclerView.Adapter<CarvingAdapter.ViewHolder> {
-    private static final String TAG = "PlantAdapter";
+    private static final String TAG = "CarvingAdapter";
     private ArrayList<Carving> mCarving = new ArrayList<>();
     private onCarvingListener mOnCarvingListener;
     private Context context;
@@ -35,26 +34,20 @@ public class CarvingAdapter extends RecyclerView.Adapter<CarvingAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        try{
-            Carving carving = mCarving.get(position);
-            String carvName = carving.getCarvName();
-            String carvEngName = carving.getCarvEngName();
-            String carvDesc = carving.getCarvDesc();
-            String carvImageName = carving.getCarvImageName();
+            try{
+                Carving carving = mCarving.get(position);
+                String carvName = carving.getCarvName();
+                String carvDesc = carving.getCarvDesc();
+                String carvImageName = carving.getCarvImageName();
+                int imageID = context.getResources().getIdentifier("com.example.mobileappc3:drawable/"+ carvImageName, null, null);
 
-
-            holder.carvName.setText(carvName);
-            holder.carvEngName.setText(carvEngName);
-            holder.carvDesc.setText(carvDesc);
-
-            Resources resources = context.getResources();
-            final int resourceId = resources.getIdentifier(String.valueOf(carving.getCarvImageName()), "drawable", context.getPackageName());
-            holder.carvImageName.setImageResource(resourceId);
-
-
-        } catch (NullPointerException e){
-            Log.e(TAG, "onBindViewHolder: Null Pointer: " + e.getMessage());
-        }
+                holder.carvName.setText(carvName);
+                holder.carvDesc.setText(carvDesc);
+                holder.carvImageName.setImageResource(imageID);
+            }
+            catch (NullPointerException e){
+                Log.e(TAG, "onBindViewHolder: Null Pointer: " + e.getMessage());
+            }
     }
 
     @Override
@@ -63,14 +56,13 @@ public class CarvingAdapter extends RecyclerView.Adapter<CarvingAdapter.ViewHold
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
-        TextView carvName, carvEngName, carvDesc;
+        TextView carvName, carvDesc;
         ImageView carvImageName;
         onCarvingListener mOnCarvingListener;
 
         public ViewHolder(View itemView, onCarvingListener mOnCarvingListener){
             super(itemView);
-            carvName = itemView.findViewById(R.id.text_carving_01);
-            carvEngName = itemView.findViewById(R.id.TV_title);
+            carvName = itemView.findViewById(R.id.TV_title);
             carvDesc = itemView.findViewById(R.id.lyric1);
             carvImageName = itemView.findViewById(R.id.IM_marae);
 

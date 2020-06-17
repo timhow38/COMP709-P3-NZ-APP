@@ -1,6 +1,8 @@
 package com.example.mobileappc3;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ImageView;
@@ -10,8 +12,10 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import java.io.ByteArrayOutputStream;
+
 public class CarvingActivity_Info extends AppCompatActivity {
-    TextView carvName_msg, carvEngName_msg, carvDesc_msg,
+    TextView carvName_msg, carvDesc_msg;
     ImageView carvImageName_msg;
 
     @Override
@@ -20,7 +24,6 @@ public class CarvingActivity_Info extends AppCompatActivity {
         setContentView(R.layout.activity_carving_info);
 
         carvName_msg = findViewById(R.id.TV_title);
-        //Change DB carvEngName_msg = findViewById(R.id.carvingEngName);
         carvDesc_msg = findViewById(R.id.lyric1);
         carvImageName_msg = findViewById(R.id.IM_marae);
 
@@ -29,14 +32,14 @@ public class CarvingActivity_Info extends AppCompatActivity {
 
         //Intent Details
         String carvName = intent.getStringExtra("carv_name");
-        String carvEngName = intent.getStringExtra("carv_eng_name");
         String carvDesc = intent.getStringExtra("carv_desc");
-        ImageView carvImageName = intent.getStringExtra("carv_image");
+        String carvImage = intent.getStringExtra("carv_image");
+        int imageID = getResources().getIdentifier("com.example.mobileappc3:drawable/"+ carvImage, null, null);
+
 
         carvName_msg.setText(carvName);
-        carvEngName_msg.setText(carvEngName);
         carvDesc_msg.setText(carvDesc);
-        carvImageName_msg.setImageResource(carvImageName);
+        carvImageName_msg.setImageResource(imageID);
     }
 
     @Override

@@ -14,7 +14,6 @@ public class CarvingActivity extends AppCompatActivity implements CarvingAdapter
         Carving carving = mCarving.get(position);
         Intent intent = new Intent(this, CarvingActivity_Info.class);
         intent.putExtra("carv_name", mCarving.get(position).getCarvName());
-        intent.putExtra("carv_eng_name", mCarving.get(position).getCarvEngName());
         intent.putExtra("carv_desc", mCarving.get(position).getCarvDesc());
         intent.putExtra("carv_image", mCarving.get(position).getCarvImageName());
         startActivity(intent);
