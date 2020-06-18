@@ -19,7 +19,6 @@ public class MainMenu extends AppCompatActivity {
         setContentView(R.layout.activity_main_menu);
 
         //loadWaiata();
-        loadCarvings();
 
         getSupportFragmentManager().beginTransaction().replace(R.id.main_menu_fragmentBox, waiataFragment).commit();
 
@@ -44,25 +43,6 @@ public class MainMenu extends AppCompatActivity {
         Waiata w7 = new Waiata("Pua Te Kōwhai", "This waiata is suitable for any occasion and is still used both in and out of Wintec. The song jumps around as it follows the flight path of the Tui.\r\n \r\nHistorically, the hill that Wintec sits on was part of the lands designated ‘mara’ or gardening land, thus, the name Te Kōpū Mānia O Kirikiriroa – The Smooth Belly (fertile lands) of Kirikiriroa (known presently as Hamilton).\r\n \r\nWaikato-Taniui, Ngāti Hauā and Ngāti Wairere are the mana whenua (known affiliated tribes) of this land.", "Pua te kōwhai\r\nNgawhā te kōrari\r\nHe tohu kōanga \r\nTau mai e Tui ki tō kāpunipuni\r\nHonihoni, kohikohi\r\nHei oranga, hei rongoā\r\nPania te kiri ki te kōwhai kura\r\nE Tui haurangi i te tākoha o te Atua\r\nRere atu, hoki mai\r\nParea te ua kōwhai\r\nKa whiti mai te rā e", "The kowhai blooms\r\nBursts open in readiness for plucking\r\na sign of spring\r\nThe Tui begin to assemble\r\nTo nibble to gather\r\nFor life and well-being\r\nThe stain of the kowhai touches\r\nWhile Tui get drunk on the nectar of god\r\nFlittering away, returning\r\nA display of yellow\r\nAs the sun shines.", "");
         mWaiata.add(w7);
     }*/
-
-    private void loadCarvings() {
-        //Loads Carvings Database
-        //Name, Eng_Name, Description, ImageName
-        Carving c1 = new Carving("Waka Maumahara (Memorial Pillar)", "On the ic_nav_icon_marae ātea (courtyard) is 7.5 metre pou (pillar) in the form of a waka (canoe).\r\nThis is the waka maumahara (memorial pillar) which faces Taupiri mountain. At the top of the waka maumahara stands the native kaahu (hawk) representing the Māori Queen Dame Te Atarirangikaahu.\r\n \r\nBelow this are five niho taniwha, a pattern representing the five Māori kings.\r\n- Pōtatau\r\n- Tāwhiao\r\n- Mahuta \r\n- Te Rata \r\n- Korokī. \r\n \r\nLearning and knowledge are symbolised with manaia and matakupenga patterns through the centre, with the pūhoro design representing the Waikato River.", "memorial_pillar");
-        mCarving.add(c1);
-        Carving c2 = new Carving("Pou Whakarae (Pillars)", "Near the waka maumahara (memorial pillar ) are seven smaller pou whakarae(pillars) which symbolise the star cluster Matariki (Pleides).\r\nThis star cluster is significant to Māori and Tainui culture.", "pillars");
-        mCarving.add(c2);
-        Carving c3 = new Carving("Pou-tūā-rangi (Internal Wharenui Post)", "The pou-tūā-rangi (internal wharenui post) near the entrance represents Wintec values.\r\n- Mahi tahi - Working together\r\n- Whakaaro whanui - Challenge and innovation\r\n- Manaaki tangata - Customer focus\r\n- Kia Tika - Taking ownership\r\n- Kia tupu, kia hua - Improvement and opportunity\r\n- Whakamana i te tangata - Valuing people\r\n \r\nIt has been carved in totara from a tree which used to stand on Wintec city campus. Behind the pou-tua-rangi is a tukutuku panel from the original Wintec wharenui, Te Kākano a te Kaahu.", "internal_wharenui_post");
-        mCarving.add(c3);
-        Carving c4 = new Carving("Pou-tūā-rongo - Tawhaki (Internal Wharenui Post)", "Located on the back wall of the wharenui the pou-tūā-rongo is a carving of Tawhaki who received the baskets of knowledge (nga kete wananga).\r\n \r\nTawhaki is featured looking towards the doorway and the world of light. This was also carved in totara from a tree which use to stand on Wintec’s city campus.", "internal_wharenui_post_tawhaki");
-        mCarving.add(c4);
-        Carving c5 = new Carving("Tomokanga (Gateway Entrance)", "The entrance designs welcome people from around the world of Wintec.\r\n \r\nThe sub-tribes (hapū) of this area are shown welcoming visitors onto the ic_nav_icon_marae in a central carving at the entrance.\r\n \r\n Mātauranga Māori and part of the creation story of Tainui are also represented in the carvings.", "gateway_entrance");
-        mCarving.add(c5);
-        Carving c6 = new Carving("Pare and Whakawae (Doorway Lintels)", "Above the wharenui pare (doorway) are three figures nga kete wānanga representing the three baskets of knowledge. Part of the creation story of Tainui is also told in the designs.\r\n \r\nManaia and takarangi patterns symbolise growth and development. The textured ngao matariki pattern on the sides of the doorway (whakawae) represents the welcoming of the cultures and peoples of the world.", "doorway_lintel");
-        mCarving.add(c6);
-        Carving c7 = new Carving("Kōrupe (Window Lintels)", "The taniwha Tuheitia is carved on the window lintel (kōrupe) above the front window of Te Kākano a te Kaahu, along with ngao matariki and manaia designs.\r\n \r\nTuheitia holds guardianship of the Waipa river and was regarded with awe and respect.", "window_lintel");
-        mCarving.add(c7);
-    }
 
     public void btmNavWaiata(MenuItem item) {
         getSupportFragmentManager().beginTransaction().replace(R.id.main_menu_fragmentBox, waiataFragment).addToBackStack(null).commit();

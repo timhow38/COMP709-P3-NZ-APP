@@ -10,36 +10,29 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-import java.io.ByteArrayOutputStream;
 
 public class CarvingActivity_Info extends AppCompatActivity {
-    TextView carvName_msg, carvDesc_msg;
-    ImageView carvImageName_msg;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carving_info);
 
-        carvName_msg = findViewById(R.id.TV_title);
-        carvDesc_msg = findViewById(R.id.lyric1);
-        carvImageName_msg = findViewById(R.id.IM_marae);
-
         //Creates Intent
         Intent intent = getIntent();
 
-        //Intent Details
-        String carvName = intent.getStringExtra("carv_name");
-        String carvDesc = intent.getStringExtra("carv_desc");
-        String carvImage = intent.getStringExtra("carv_image");
-        int imageID = getResources().getIdentifier("com.example.mobileappc3:drawable/"+ carvImage, null, null);
+        Carving carving = intent.getParcelableExtra("carving_item");
 
+        int carving_image = carving.getCarvImageName();
+        String carving_name = carving.getCarvName();
+        String carving_desc = carving.getCarvDesc();
 
-        carvName_msg.setText(carvName);
-        carvDesc_msg.setText(carvDesc);
-        carvImageName_msg.setImageResource(imageID);
+        ImageView carving_imageView = findViewById(R.id.IM_marae);
+        carving_imageView.setImageResource(carving_image);
+        TextView carving_name_textView = findViewById(R.id.TV_title);
+        carving_name_textView.setText(carving_name);
+        TextView carving_desc_textView = findViewById(R.id.lyric1);
+        carving_desc_textView.setText(carving_desc);
     }
 
     @Override

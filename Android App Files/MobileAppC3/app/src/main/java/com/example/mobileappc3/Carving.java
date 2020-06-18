@@ -20,9 +20,9 @@ public class Carving implements Parcelable {
     private String carvDesc;
 
     @ColumnInfo(name = "carv_imageName")
-    private String carvImageName;
+    private int carvImageName;
 
-    public Carving(String carvName, String carvDesc, String carvImageName){
+    public Carving(String carvName, String carvDesc, int carvImageName){
         this.carvName = carvName;
         this.carvDesc = carvDesc;
         this.carvImageName = carvImageName;
@@ -35,7 +35,7 @@ public class Carving implements Parcelable {
         id = in.readInt();
         carvName = in.readString();
         carvDesc = in.readString();
-        carvImageName = in.readString();
+        carvImageName = in.readInt();
     }
 
     public static final Parcelable.Creator<Carving> CREATOR = new Creator<Carving>(){
@@ -74,11 +74,11 @@ public class Carving implements Parcelable {
         this.carvDesc = carvDesc;
     }
 
-    public String getCarvImageName() {
+    public int getCarvImageName() {
         return carvImageName;
     }
 
-    public void setCarvImageName(String carvImageName) {
+    public void setCarvImageName(int carvImageName) {
         this.carvImageName = carvImageName;
     }
 
@@ -97,11 +97,11 @@ public class Carving implements Parcelable {
     }
 
     @Override
-    public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeInt(id);
-        parcel.writeString(carvName);
-        parcel.writeString(carvDesc);
-        parcel.writeString(carvImageName);
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(id);
+        dest.writeString(carvName);
+        dest.writeString(carvDesc);
+        dest.writeInt(carvImageName);
 
     }
 }
