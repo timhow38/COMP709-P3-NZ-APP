@@ -27,9 +27,11 @@
     <RelativeLayout
         android:layout_marginTop="-15dp"
         android:layout_width="wrap_content"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:id="@+id/RelativeTitle1"
-        android:layout_below="@id/relativeMarae1">
+        android:layout_below="@id/relativeMarae1"
+        android:paddingTop="4dp"
+        android:paddingBottom="2dp">
 
         <TextView
             android:id="@+id/TV_title"
@@ -40,16 +42,21 @@
             android:text="@string/text_carving_01"
             android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:background="@drawable/rounded_back_black"/>
-
+            android:background="@drawable/rounded_back_black" />
 
     </RelativeLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="618dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp">
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
         android:id="@+id/relativeLyric1"
         android:layout_below="@id/RelativeTitle1"
         android:padding="10dp">
@@ -61,15 +68,15 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:fontFamily="@font/poppins_medium"
-            android:gravity="center"
             android:text="@string/text_info_carving_01"
-            android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:textSize="20sp" />
+            android:textSize="18sp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"/>
 
     </RelativeLayout>
 
-
+    </ScrollView>
 
 
 </LinearLayout>

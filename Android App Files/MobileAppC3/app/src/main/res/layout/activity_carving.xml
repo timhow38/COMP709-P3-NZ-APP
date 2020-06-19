@@ -56,7 +56,6 @@
             android:layout_height="620dp"
             android:layout_below="@id/heading_title"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="0dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/rounded_back">
 
@@ -65,21 +64,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="618dp"
                 android:layout_marginTop="1dp"
-                android:layout_marginBottom="0dp">
+                android:layout_marginBottom="1dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
+                    android:layout_marginBottom="0dp"
                     android:orientation="vertical">
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/recyclerView_carving"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="8dp"
-                        android:layout_marginBottom="8dp"/>
+                        android:layout_height="match_parent"/>
 
                 </LinearLayout>
 
