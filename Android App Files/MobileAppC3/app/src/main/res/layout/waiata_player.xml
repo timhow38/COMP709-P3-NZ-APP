@@ -49,7 +49,7 @@
         <!-- English title of song -->
         <TextView
             android:id="@+id/TVsongTitle2"
-            android:text="You are not lost"
+            android:text="0:00"
             android:textSize="20dp"
             android:textStyle="bold"
             android:textColor="@android:color/white"
@@ -115,6 +115,7 @@
 
         <!-- Seekbar for playback -->
         <SeekBar
+            android:id="@+id/seekBar"
             android:layout_width="209dp"
             android:layout_height="50dp"
             android:layout_marginStart="15dp"

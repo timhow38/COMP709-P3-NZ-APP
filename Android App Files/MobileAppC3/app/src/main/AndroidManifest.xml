@@ -18,6 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".WaiataPlayer"/>
         <activity android:name=".CarvingActivity"/>
         <activity android:name=".CarvingActivity_Info"/>
         <activity android:name=".About"/>
