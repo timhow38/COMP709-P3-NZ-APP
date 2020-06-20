@@ -3,45 +3,66 @@ package com.example.mobileappc3;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.List;
 
-//public class WaiataAdapter extends RecyclerView.Adapter<WaiataAdapter.WaiataHolder> {
-//    private List<Waiata> waiatas = new ArrayList<>();
-//
-//    @NonNull
-//    @Override
-//    public WaiataHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-//        View itemView = LayoutInflater.from(parent.getContext())
-//                .inflate(R.layout.)
-//        return null;
-//    }
-//
-//    @Override
-//    public void onBindViewHolder(@NonNull WaiataHolder holder, int position) {
-//
-//    }
-//
-//    @Override
-//    public int getItemCount() {
-//        return 0;
-//    }
-//
-//    class WaiataHolder extends RecyclerView.ViewHolder {
-//        private TextView songTitle1;
-//        private TextView songTitle2;
-//
-//        public WaiataHolder(@NonNull View itemView) {
-//            super(itemView);
-//            songTitle1 = itemView.findViewById(R.id.TVsongTitle);
-//            songTitle2 = itemView.findViewById(R.id.TVsongTitle2);
-//
-//        }
-//    }
-//
-//}
+public class WaiataAdapter extends RecyclerView.Adapter<WaiataAdapter.ViewHolder> {
+    private ArrayList<Waiata> mWaiataList;
+    private onItemClickListener mListener;
+
+    public interface onItemClickListener {
+        void onItemClick(int position);
+    }
+
+    public void setonItemClickListener(onItemClickListener listener) {
+        mListener = listener;
+    }
+
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        public ImageView mImageView;
+        public TextView mTextView1;
+
+        public ViewHolder(View itemView, final WaiataAdapter.onItemClickListener listener) {
+            super(itemView);
+            mImageView = itemView.findViewById(R.id.imageView_carving);
+            mTextView1 = itemView.findViewById(R.id.text_carving_01);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (listener != null) {
+                        int position = getAdapterPosition();
+                        if (position != RecyclerView.NO_POSITION) {
+                            listener.onItemClick(position);
+                        }
+                    }
+                }
+            });
+        }
+    }
+
+    public WaiataAdapter(ArrayList<Waiata> carvingList) {
+        mWaiataList = carvingList;
+    }
+
+    @Override
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.carving_item, parent, false);
+        WaiataAdapter.ViewHolder vh = new WaiataAdapter.ViewHolder(v, mListener);
+        return vh;
+    }
+
+    @Override
+    public void onBindViewHolder(ViewHolder holder, int position) {
+        Waiata currentItem = mWaiataList.get(position);
+        holder.mTextView1.setText(currentItem.getWaiataName());
+    }
+
+    @Override
+    public int getItemCount() {
+        return mWaiataList.size();
+    }
+}
