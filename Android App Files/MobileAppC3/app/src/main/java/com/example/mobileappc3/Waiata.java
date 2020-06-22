@@ -16,7 +16,7 @@ public class Waiata implements Parcelable {
     @ColumnInfo(name = "waiata_Name")
     private String waiataName;
 
-    @ColumnInfo(name ="waiata_Desc")
+    @ColumnInfo(name = "waiata_Desc")
     private String waiataDesc;
 
     @ColumnInfo(name = "waiata_MaoriLyrics")
@@ -25,27 +25,42 @@ public class Waiata implements Parcelable {
     @ColumnInfo(name = "waiata_EngLyrics")
     private String waiataEngLyrics;
 
-    @ColumnInfo(name = "waiata_VideoName")
-    private String waiataVideoName;
+    @ColumnInfo(name = "waiata_Image")
+    private int waiataImage;
 
-    public Waiata(String waiataName, String waiataDesc, String waiataMaoriLyrics, String waiataEngLyrics, String waiataVideoName){
+    @ColumnInfo(name = "waiata_VideoName1")
+    private int waiataVideoName1;
+
+    @ColumnInfo(name = "waiata_VideoName2")
+    private int waiataVideoName2;
+
+    @ColumnInfo(name = "waiata_VideoName3")
+    private int waiataVideoName3;
+
+    public Waiata(String waiataName, String waiataDesc, String waiataMaoriLyrics, String waiataEngLyrics, int waiataImage, int waiataVideoName1, int waiataVideoName2, int waiataVideoName3) {
         this.waiataName = waiataName;
         this.waiataDesc = waiataDesc;
         this.waiataMaoriLyrics = waiataMaoriLyrics;
         this.waiataEngLyrics = waiataEngLyrics;
-        this.waiataVideoName = waiataVideoName;
+        this.waiataImage = waiataImage;
+        this.waiataVideoName1 = waiataVideoName1;
+        this.waiataVideoName2 = waiataVideoName2;
+        this.waiataVideoName3 = waiataVideoName3;
     }
 
     @Ignore
-    public Waiata(){}
+    public Waiata() {
+    }
 
-    protected Waiata(Parcel in){
+    protected Waiata(Parcel in) {
         id = in.readInt();
         waiataName = in.readString();
         waiataDesc = in.readString();
         waiataMaoriLyrics = in.readString();
         waiataEngLyrics = in.readString();
-        waiataVideoName = in.readString();
+        waiataVideoName1 = in.readInt();
+        waiataVideoName2 = in.readInt();
+        waiataVideoName3 = in.readInt();
     }
 
     public static final Creator<Waiata> CREATOR = new Creator<Waiata>() {
@@ -92,22 +107,43 @@ public class Waiata implements Parcelable {
         this.waiataEngLyrics = waiataEngLyrics;
     }
 
-    public String getWaiataVideoName() {
-        return waiataVideoName;
+    public int getWaiataImage() { return waiataImage; }
+
+    public void setWaiataImage(int waiataImage) {
+        this.waiataImage = waiataImage;
     }
 
-    public void setWaiataVideoName(String waiataVideoName) {
-        this.waiataVideoName = waiataVideoName;
+    public int getWaiataVideoName1() {
+        return waiataVideoName1;
+    }
+
+    public void setWaiataVideoName1(int waiataVideoName) {
+        this.waiataVideoName1 = waiataVideoName;
+    }
+
+    public int getWaiataVideoName2() { return waiataVideoName2; }
+
+    public void setWaiataVideoName2(int waiataVideoName2) {
+        this.waiataVideoName2 = waiataVideoName2;
+    }
+
+    public int getWaiataVideoName3() { return waiataVideoName3; }
+
+    public void setWaiataVideoName3(int waiataVideoName3) {
+        this.waiataVideoName3 = waiataVideoName3;
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Waiata(" +
                 "waiataName='" + waiataName + '\'' +
                 ", waiataDesc='" + waiataDesc + '\'' +
                 ", waiataMaoriLyrics='" + waiataMaoriLyrics + '\'' +
                 ", waiataEngLyrics='" + waiataEngLyrics + '\'' +
-                ", waiataVideoName='" + waiataVideoName + '\'' +
+                ", waiataImage='" + waiataImage + '\'' +
+                ", waiataVideoName1='" + waiataVideoName1 + '\'' +
+                ", waiataVideoName2='" + waiataVideoName2 + '\'' +
+                ", waiataVideoName3='" + waiataVideoName3 + '\'' +
                 '}';
     }
 
@@ -123,6 +159,6 @@ public class Waiata implements Parcelable {
         parcel.writeString(waiataDesc);
         parcel.writeString(waiataMaoriLyrics);
         parcel.writeString(waiataEngLyrics);
-        parcel.writeString(waiataVideoName);
+        parcel.writeInt(waiataVideoName1);
     }
 }
