@@ -11,7 +11,6 @@
     android:scrollbars="vertical"
     tools:context=".WaiataFragment">
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="275dp"
@@ -45,7 +44,7 @@
             android:textColor="@android:color/white"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:background="@drawable/rounded_back_black" />
+            android:background="@drawable/back_black" />
 
     </RelativeLayout>
 
