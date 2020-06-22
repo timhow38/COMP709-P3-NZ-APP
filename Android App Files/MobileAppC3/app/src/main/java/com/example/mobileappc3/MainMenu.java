@@ -64,10 +64,10 @@ public class MainMenu extends AppCompatActivity {
     }*/
 
     public void btmNavWaiata() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.main_menu_fragmentBox, waiataFragment).addToBackStack(null).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.main_menu_fragmentBox, waiataFragment).commit();
     }
 
     public void btmNavMarae() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.main_menu_fragmentBox, maraeFragment).addToBackStack(null).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.main_menu_fragmentBox, maraeFragment).commit();
     }
 }
