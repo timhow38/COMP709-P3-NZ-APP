@@ -34,4 +34,10 @@ public class CarvingActivity_Info extends AppCompatActivity {
         TextView carving_desc_textView = findViewById(R.id.lyric1);
         carving_desc_textView.setText(carving_desc);
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        onBackPressed();
+        return true;
+    }
 }

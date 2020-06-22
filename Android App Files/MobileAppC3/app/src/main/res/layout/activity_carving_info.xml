@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-    android:fitsSystemWindows="true"
     android:orientation="vertical"
     android:scrollbars="vertical"
     tools:context=".WaiataFragment">
@@ -54,6 +53,13 @@
         android:layout_marginTop="1dp"
         android:layout_marginBottom="1dp">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLyric1"
+        android:layout_below="@id/RelativeTitle1"
+        android:padding="10dp">
+
         <TextView
             android:id="@+id/lyric1"
             android:layout_width="match_parent"
@@ -66,6 +72,8 @@
             android:textSize="18sp"
             android:paddingTop="2dp"
             android:paddingBottom="2dp"/>
+
+    </RelativeLayout>
 
     </ScrollView>
 
