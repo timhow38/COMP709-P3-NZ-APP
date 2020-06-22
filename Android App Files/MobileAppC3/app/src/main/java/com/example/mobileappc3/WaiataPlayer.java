@@ -24,7 +24,7 @@ public class WaiataPlayer extends AppCompatActivity {
     private TextView songTitle, curTime; //songDesc
     private int songChoice;
     private boolean flag = true;
-    private Button prevSong, pauseplay, nextSong;
+    private Button prevSong, pauseplay, nextSong, karaoke, non_vocal;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,6 +36,9 @@ public class WaiataPlayer extends AppCompatActivity {
         prevSong = findViewById(R.id.backbutton);
         pauseplay = findViewById(R.id.pauseplay);
         nextSong = findViewById(R.id.skipbutton);
+        karaoke = findViewById(R.id.karaoke);
+        non_vocal = findViewById(R.id.non_vocal);
+
         handler = new Handler();
         seekBar = findViewById(R.id.seekBar);
 
@@ -101,6 +104,26 @@ public class WaiataPlayer extends AppCompatActivity {
                     flag = false;
                 }
                 boundaryCheck();
+            }
+        });
+
+        karaoke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(WaiataPlayer.this, WaiataPlayerOV.class);
+                intent.putExtra("OtherVersion", 1);
+                intent.putExtra("title", songTitle.getText());
+                startActivity(intent);
+            }
+        });
+
+        non_vocal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(WaiataPlayer.this, WaiataPlayerOV.class);
+                intent.putExtra("OtherVersion", 2);
+                intent.putExtra("title", songTitle.getText());
+                startActivity(intent);
             }
         });
 

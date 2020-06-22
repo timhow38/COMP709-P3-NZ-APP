@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:background="@drawable/gradient_background">
+    tools:context=".MainActivity">
 
     <!-- Header -->
     <RelativeLayout
-        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
-        android:layout_height="80dp">
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp">
 
         <ImageView
             android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_down_arrow"
             android:layout_marginHorizontal="8dp"
-            />
+            android:src="@drawable/ic_down_arrow" />
 
     </RelativeLayout>
 
@@ -33,44 +31,44 @@
         <!-- Main title of song -->
         <TextView
             android:id="@+id/TVsongTitle"
-            android:text="E Kore Koe E Ngaro"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
-            android:fontFamily="@font/poppins_bold"
             android:layout_width="209dp"
             android:layout_height="100dp"
             android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="15dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="15dp" />
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="E Kore Koe E Ngaro"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
         <!-- English title of song -->
         <TextView
             android:id="@+id/TVsongTitle2"
-            android:text="0:00"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"
             android:layout_width="209dp"
             android:layout_height="50dp"
             android:layout_below="@+id/TVsongTitle"
             android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp" />
+            android:layout_marginLeft="15dp"
+            android:text="0:00"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <!-- Image of song -->
         <androidx.cardview.widget.CardView
             android:layout_width="300dp"
             android:layout_height="match_parent"
             android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:layout_marginEnd="-130dp"
-            android:layout_marginBottom="-3dp"
-            app:cardCornerRadius="8dp"
-            android:layout_alignParentRight="true"
             android:layout_marginRight="-130dp"
-            android:background="@drawable/shadow">
+            android:layout_marginBottom="-3dp"
+            android:background="@drawable/shadow"
+            app:cardCornerRadius="8dp">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -84,55 +82,76 @@
             android:id="@+id/backbutton"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="14dp"
-            android:background="@drawable/ic_skip_previous"
             android:layout_below="@id/TVsongTitle2"
+            android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginLeft="14dp" />
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/ic_skip_previous" />
 
         <!-- Play/Pause button -->
         <Button
             android:id="@+id/pauseplay"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginStart="14dp"
             android:layout_below="@id/TVsongTitle2"
-            android:background="@drawable/ic_play_arrow"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
             android:layout_toRightOf="@+id/backbutton"
-            android:layout_marginLeft="14dp" />
+            android:background="@drawable/ic_play_arrow" />
 
         <!-- Skip to next -->
         <Button
             android:id="@+id/skipbutton"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginStart="14dp"
             android:layout_below="@id/TVsongTitle2"
-            android:background="@drawable/ic_skip_next"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
             android:layout_toRightOf="@+id/pauseplay"
-            android:layout_marginLeft="14dp" />
+            android:background="@drawable/ic_skip_next" />
 
         <!-- Seekbar for playback -->
         <SeekBar
             android:id="@+id/seekBar"
             android:layout_width="209dp"
             android:layout_height="50dp"
-            android:layout_marginStart="15dp"
             android:layout_below="@id/backbutton"
+            android:layout_marginStart="15dp"
             android:layout_marginLeft="15dp" />
 
     </RelativeLayout>
 
-    <!-- Scroll view for recommended -->
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:gravity="center">
 
-        <include
-            android:id="@+id/frag1"
-            layout="@layout/waiata_scroll_frag"/>
+        <Button
+            android:id="@+id/karaoke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Karaoke" />
 
-    </ScrollView>
+        <Button
+            android:id="@+id/non_vocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="Non-Vocal" />
+
+    </LinearLayout>
+
+    <!-- Scroll view for recommended -->
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <include-->
+    <!--            android:id="@+id/frag1"-->
+    <!--            layout="@layout/waiata_scroll_frag"/>-->
+
+    <!--    </ScrollView>-->
 
 </LinearLayout>
