@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
     android:orientation="vertical"
-    android:fitsSystemWindows="true"
     android:scrollbars="vertical"
     tools:context=".WaiataFragment">
 
