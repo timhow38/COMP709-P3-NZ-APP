@@ -44,8 +44,8 @@ public class WaiataAdapter extends RecyclerView.Adapter<WaiataAdapter.ViewHolder
         }
     }
 
-    public WaiataAdapter(ArrayList<Waiata> carvingList) {
-        mWaiataList = carvingList;
+    public WaiataAdapter(ArrayList<Waiata> waiataList) {
+        mWaiataList = waiataList;
     }
 
     @Override
