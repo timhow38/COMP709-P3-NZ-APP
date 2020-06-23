@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -43,7 +44,19 @@ public class WaiataPlayer extends AppCompatActivity {
         seekBar = findViewById(R.id.seekBar);
 
         final Intent intent = getIntent();
-        songChoice = intent.getIntExtra("card", 0);
+        Waiata waiata = intent.getParcelableExtra("waiata_name");
+
+        String wSong = waiata.getWaiataName();
+        String wBrief = waiata.getWaiataDesc();
+        String wMaoriLyric = waiata.getWaiataEngLyrics();
+        String wEnglishLyric = waiata.getWaiataEngLyrics();
+
+        int wImageName = waiata.getWaiataImage();
+        int wVid1 = waiata.getWaiataVideoName1();
+        int wVid2 = waiata.getWaiataVideoName2();
+        int wVid3 = waiata.getWaiataVideoName3();
+
+        songChoice = intent.getIntExtra("song_name", 0);
         pickSong(songChoice);
         mediaPlayer.pause();
 
