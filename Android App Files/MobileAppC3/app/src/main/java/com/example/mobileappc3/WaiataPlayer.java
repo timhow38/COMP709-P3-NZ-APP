@@ -49,9 +49,18 @@ public class WaiataPlayer extends AppCompatActivity {
         Waiata waiata = intent.getParcelableExtra("waiata_item");
 
         wSong = waiata.getWaiataName();
+
         wBrief = waiata.getWaiataDesc();
-        wMaoriLyric = waiata.getWaiataEngLyrics();
+        TextView brief_content = findViewById(R.id.brief_content);
+        brief_content.setText(wBrief);
+        wMaoriLyric = waiata.getWaiataMaoriLyrics();
+        TextView maori_lyrics = findViewById(R.id.maori_lyrics);
+        maori_lyrics.setText(wMaoriLyric);
         wEnglishLyric = waiata.getWaiataEngLyrics();
+        TextView english_lyrics = findViewById(R.id.english_lyrics);
+        english_lyrics.setText(wEnglishLyric);
+
+
 
         int wImageName = waiata.getWaiataImage();
         int wVid1 = waiata.getWaiataVideoName1();
