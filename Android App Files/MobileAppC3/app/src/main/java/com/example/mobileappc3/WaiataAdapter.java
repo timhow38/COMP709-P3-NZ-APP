@@ -28,8 +28,8 @@ public class WaiataAdapter extends RecyclerView.Adapter<WaiataAdapter.ViewHolder
 
         public ViewHolder(View itemView, final WaiataAdapter.onItemClickListener listener) {
             super(itemView);
-            mImageView = itemView.findViewById(R.id.waiataImage);
-            mTextView1 = itemView.findViewById(R.id.waiata1);
+            mImageView = itemView.findViewById(R.id.waiata1);
+            mTextView1 = itemView.findViewById(R.id.waiata_title);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -50,7 +50,7 @@ public class WaiataAdapter extends RecyclerView.Adapter<WaiataAdapter.ViewHolder
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.waiata_items, parent, false);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.carving_item, parent, false);
         WaiataAdapter.ViewHolder vh = new WaiataAdapter.ViewHolder(v, mListener);
         return vh;
     }
@@ -58,7 +58,6 @@ public class WaiataAdapter extends RecyclerView.Adapter<WaiataAdapter.ViewHolder
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         Waiata currentItem = mWaiataList.get(position);
-        holder.mImageView.setImageResource(currentItem.getWaiataImage());
         holder.mTextView1.setText(currentItem.getWaiataName());
     }
 

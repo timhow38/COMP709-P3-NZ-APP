@@ -28,9 +28,6 @@ public class Waiata implements Parcelable {
     @ColumnInfo(name = "waiata_Image")
     private int waiataImage;
 
-    @ColumnInfo(name = "waiataMP3")
-    private int waiataMP3;
-
     @ColumnInfo(name = "waiata_VideoName1")
     private int waiataVideoName1;
 
@@ -40,13 +37,12 @@ public class Waiata implements Parcelable {
     @ColumnInfo(name = "waiata_VideoName3")
     private int waiataVideoName3;
 
-    public Waiata(String waiataName, String waiataDesc, String waiataMaoriLyrics, String waiataEngLyrics, int waiataImage, int waiataMP3, int waiataVideoName1, int waiataVideoName2, int waiataVideoName3) {
+    public Waiata(String waiataName, String waiataDesc, String waiataMaoriLyrics, String waiataEngLyrics, int waiataImage, int waiataVideoName1, int waiataVideoName2, int waiataVideoName3) {
         this.waiataName = waiataName;
         this.waiataDesc = waiataDesc;
         this.waiataMaoriLyrics = waiataMaoriLyrics;
         this.waiataEngLyrics = waiataEngLyrics;
         this.waiataImage = waiataImage;
-        this.waiataMP3 = waiataMP3;
         this.waiataVideoName1 = waiataVideoName1;
         this.waiataVideoName2 = waiataVideoName2;
         this.waiataVideoName3 = waiataVideoName3;
@@ -62,7 +58,6 @@ public class Waiata implements Parcelable {
         waiataDesc = in.readString();
         waiataMaoriLyrics = in.readString();
         waiataEngLyrics = in.readString();
-        waiataMP3 = in.readInt();
         waiataVideoName1 = in.readInt();
         waiataVideoName2 = in.readInt();
         waiataVideoName3 = in.readInt();
@@ -118,12 +113,6 @@ public class Waiata implements Parcelable {
         this.waiataImage = waiataImage;
     }
 
-    public int getWaiataMP3() {  return waiataMP3;  }
-
-    public void setWaiataMP3(int waiataMP3) {
-        this.waiataMP3 = waiataMP3;
-    }
-
     public int getWaiataVideoName1() {
         return waiataVideoName1;
     }
@@ -152,7 +141,6 @@ public class Waiata implements Parcelable {
                 ", waiataMaoriLyrics='" + waiataMaoriLyrics + '\'' +
                 ", waiataEngLyrics='" + waiataEngLyrics + '\'' +
                 ", waiataImage='" + waiataImage + '\'' +
-                ", waiataMP3='" + waiataMP3 + '\'' +
                 ", waiataVideoName1='" + waiataVideoName1 + '\'' +
                 ", waiataVideoName2='" + waiataVideoName2 + '\'' +
                 ", waiataVideoName3='" + waiataVideoName3 + '\'' +
@@ -171,10 +159,6 @@ public class Waiata implements Parcelable {
         parcel.writeString(waiataDesc);
         parcel.writeString(waiataMaoriLyrics);
         parcel.writeString(waiataEngLyrics);
-        parcel.writeInt(waiataImage);
-        parcel.writeInt(waiataMP3);
         parcel.writeInt(waiataVideoName1);
-        parcel.writeInt(waiataVideoName2);
-        parcel.writeInt(waiataVideoName3);
     }
 }
