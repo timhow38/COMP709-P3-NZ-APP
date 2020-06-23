@@ -15,11 +15,11 @@
 
         <ImageView
             android:id="@+id/icon"
-            android:layout_width="70dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_margin="20dp"
+            android:layout_margin="10dp"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/ic_group"
             tools:ignore="VectorDrawableCompat" />
