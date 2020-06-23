@@ -22,5 +22,12 @@
         <item name="android:textColorSecondary">@color/white</item>
     </style>
 
+    <!-- Global SeekBar Style
+    <style name="AppThemeTwo" parent="Theme.AppCompat.Light">
+        <item name="android:progressBackgroundTint">#f4511e</item>
+        <item name="android:progressTint">#388e3c</item>
+        <item name="android:colorControlActivated">#ffffff</item>
+    </style>-->
+
     <!-- Global SplashScreen Style -->
 </resources>
