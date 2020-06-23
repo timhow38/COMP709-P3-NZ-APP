@@ -58,7 +58,7 @@ public class WaiataAdapter extends RecyclerView.Adapter<WaiataAdapter.ViewHolder
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         Waiata currentItem = mWaiataList.get(position);
-        holder.mTextView1.setText(currentItem.getWaiataName());
+//        holder.mTextView1.setText(currentItem.getWaiataName());
     }
 
     @Override
