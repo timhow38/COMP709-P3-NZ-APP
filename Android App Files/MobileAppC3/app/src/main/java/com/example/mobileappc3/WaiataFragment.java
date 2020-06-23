@@ -39,13 +39,6 @@ public class WaiataFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-
-        mWaiata.clear();
-
-        //Loads Waiata DB
-        loadWaiata();
-
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_waiata, container, false);
 
@@ -60,6 +53,11 @@ public class WaiataFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        //If Waiata ArrayList is equal to 0, load Waiata DB
+        if(mWaiata.size() == 0){
+            loadWaiata();
+        }
 
         //Recycler View Settings
         mRecyclerView = view.findViewById(R.id.recyclerView_waiata);
@@ -80,8 +78,6 @@ public class WaiataFragment extends Fragment {
                 startActivity(intent);
             }
         });
-
-
 
         return view;
     }
