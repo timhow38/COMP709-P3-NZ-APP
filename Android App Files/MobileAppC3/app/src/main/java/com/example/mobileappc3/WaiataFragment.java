@@ -40,6 +40,9 @@ public class WaiataFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+
+        mWaiata.clear();
+
         //Loads Waiata DB
         loadWaiata();
 
@@ -77,6 +80,9 @@ public class WaiataFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+
+
         return view;
     }
 
