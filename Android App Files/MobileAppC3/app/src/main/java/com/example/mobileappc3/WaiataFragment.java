@@ -20,7 +20,7 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class WaiataFragment extends Fragment implements View.OnClickListener {
+public class WaiataFragment extends Fragment {
 
     ImageButton about;
 
@@ -78,6 +78,7 @@ public class WaiataFragment extends Fragment implements View.OnClickListener {
             }
         });
 
+        return view;
     }
 
     private void loadWaiata() {
