@@ -34,6 +34,7 @@
             android:layout_toLeftOf="@id/icon"
             android:ellipsize="end"
             android:text="Maraē"
+            android:fontFamily="@font/poppins_bold"
             android:textColor="@color/white"
             android:textSize="40dp" />
 
@@ -47,6 +48,7 @@
             android:layout_toStartOf="@id/icon"
             android:layout_toLeftOf="@id/icon"
             android:text="Te Kōpū Mānia o Kirikiriroa"
+            android:fontFamily="@font/poppins_bold"
             android:textColor="@color/white"
             android:textSize="20dp" />
     </RelativeLayout>

@@ -83,6 +83,7 @@
             android:layout_below="@+id/recommendtext1"
             android:layout_toRightOf="@+id/recommendplay1"
             android:fontFamily="@font/poppins_bold"
+            android:text="More Info"
             android:textColor="@color/white"
             android:layout_marginStart="10dp"
             android:layout_marginLeft="10dp"
@@ -124,6 +125,7 @@
             android:layout_height="50dp"
             android:layout_toRightOf="@+id/recommendimg2"
             android:text="Waikato Te Awa"
+
             android:textColor="@android:color/white"
             android:textSize="25dp"
             android:textStyle="bold"
@@ -277,6 +279,7 @@
 
         <Button
             android:id="@+id/recommendmoreinfo4"
+            android:textAlignment="center"
             android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_below="@+id/recommendtext4"
