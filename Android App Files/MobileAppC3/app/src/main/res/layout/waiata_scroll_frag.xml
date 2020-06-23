@@ -124,6 +124,7 @@
             android:layout_height="50dp"
             android:layout_toRightOf="@+id/recommendimg2"
             android:text="Waikato Te Awa"
+
             android:textColor="@android:color/white"
             android:textSize="25dp"
             android:textStyle="bold"
