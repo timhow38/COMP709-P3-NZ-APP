@@ -261,6 +261,6 @@ public class WaiataPlayerOV extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         videoPlayer.stopPlayback();
-        handler.removeCallbacks(runnable);
+        finish();
     }
 }
