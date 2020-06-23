@@ -8,6 +8,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -24,7 +25,9 @@ public class WaiataPlayer extends AppCompatActivity {
     private TextView songTitle, curTime; //songDesc
     private int songChoice;
     private boolean flag = true;
-    private Button prevSong, pauseplay, nextSong;
+    private Button prevSong, pauseplay, nextSong, karaoke, non_vocal;
+
+    private String wSong, wBrief, wMaoriLyric, wEnglishLyric;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,12 +39,35 @@ public class WaiataPlayer extends AppCompatActivity {
         prevSong = findViewById(R.id.backbutton);
         pauseplay = findViewById(R.id.pauseplay);
         nextSong = findViewById(R.id.skipbutton);
+        karaoke = findViewById(R.id.karaoke);
+        non_vocal = findViewById(R.id.non_vocal);
+
         handler = new Handler();
         seekBar = findViewById(R.id.seekBar);
 
         final Intent intent = getIntent();
-        songChoice = intent.getIntExtra("card", 0);
-        pickSong(songChoice);
+        Waiata waiata = intent.getParcelableExtra("waiata_item");
+
+        wSong = waiata.getWaiataName();
+
+        wBrief = waiata.getWaiataDesc();
+        TextView brief_content = findViewById(R.id.brief_content);
+        brief_content.setText(wBrief);
+        wMaoriLyric = waiata.getWaiataMaoriLyrics();
+        TextView maori_lyrics = findViewById(R.id.maori_lyrics);
+        maori_lyrics.setText(wMaoriLyric);
+        wEnglishLyric = waiata.getWaiataEngLyrics();
+        TextView english_lyrics = findViewById(R.id.english_lyrics);
+        english_lyrics.setText(wEnglishLyric);
+
+
+
+        int wImageName = waiata.getWaiataImage();
+        int wVid1 = waiata.getWaiataVideoName1();
+        int wVid2 = waiata.getWaiataVideoName2();
+        int wVid3 = waiata.getWaiataVideoName3();
+
+        pickSong(wSong);
         mediaPlayer.pause();
 
         // when previous skip button is pressed
@@ -55,7 +81,7 @@ public class WaiataPlayer extends AppCompatActivity {
 
                 if (songChoice > 1) {
                     songChoice--;
-                    pickSong(songChoice);
+                    pickSong(pickNose(songChoice));
                     pauseplay.setBackgroundResource(R.drawable.ic_pause);
                     mediaPlayer.start();
                     flag = false;
@@ -69,7 +95,7 @@ public class WaiataPlayer extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (flag) {
-                    pickSong(songChoice);
+                    pickSong(wSong);
                     pauseplay.setBackgroundResource(R.drawable.ic_pause);
                     mediaPlayer.start();
                     flag = false;
@@ -95,7 +121,7 @@ public class WaiataPlayer extends AppCompatActivity {
 
                 if (songChoice < 7) {
                     songChoice++;
-                    pickSong(songChoice);
+                    pickSong(pickNose(songChoice));
                     pauseplay.setBackgroundResource(R.drawable.ic_pause);
                     mediaPlayer.start();
                     flag = false;
@@ -104,60 +130,93 @@ public class WaiataPlayer extends AppCompatActivity {
             }
         });
 
+        karaoke.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(WaiataPlayer.this, WaiataPlayerOV.class);
+                intent.putExtra("OtherVersion", 1);
+                intent.putExtra("title", songTitle.getText());
+                startActivity(intent);
+            }
+        });
+
+        non_vocal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(WaiataPlayer.this, WaiataPlayerOV.class);
+                intent.putExtra("OtherVersion", 2);
+                intent.putExtra("title", songTitle.getText());
+                startActivity(intent);
+            }
+        });
+
         boundaryCheck();
 
-//        new Thread(runnable){
-//            @Override
-//            public void run() {
-//                Message msg = new Message();
-//                msg.what = mediaPlayer.getCurrentPosition();
-//                String cTime = createTimeLabel(msg.what);
-//                curTime.setText(cTime);
-//            }
-//        }.start();
+    }
+
+    private String pickNose(int num) {
+        switch (num){
+            case 1:
+                return "E Kore Koe E Ngaro";
+            case 2:
+                return "He Maimai Aroha nā Tāwhiao";
+            case 3:
+                return "Waikato Te Awa";
+            case 4:
+                return "Tutira ma inga iwi";
+            case 5:
+                return "Pupuke Te Hihiri";
+            case 6:
+                return "I Te Whare Whakapiri";
+            case 7:
+                return "Pua Te Kōwhai";
+            default:
+                return "abc";
+        }
     }
 
     // pick song
-    private void pickSong(int num) {
-        switch (num) {
-            case 1:
+    private void pickSong(String wSong) {
+        switch (wSong) {
+            case "E Kore Koe E Ngaro":
                 songTitle.setText("E Kore Koe E Ngaro");
-//                songDesc.setText("song 1");
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.ekorekoe_1);
+                songChoice = 1;
                 break;
-            case 2:
+            case "He Maimai Aroha nā Tāwhiao":
                 songTitle.setText("He Maimai Aroha nā Tāwhiao");
-//                songDesc.setText("song 2");
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.hemaimaiaroha_1);
+                songChoice = 2;
                 break;
-            case 3:
+            case "Waikato Te Awa":
                 songTitle.setText("Waikato Te Awa");
-//                songDesc.setText("song 3");
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.waikatoteawa_1);
+                songChoice = 3;
                 break;
-            case 4:
+            case "Tutira ma inga iwi":
                 songTitle.setText("Tutira ma inga iwi");
-//                songDesc.setText("song 4");
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.tutiramainga_1);
+                songChoice = 4;
                 break;
-            case 5:
+            case "Pupuke Te Hihiri":
                 songTitle.setText("Pupuke Te Hihiri");
-//                songDesc.setText("song 5");
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.pupuketehihiri_1);
+                songChoice = 5;
                 break;
-            case 6:
+            case "I Te Whare Whakapiri":
                 songTitle.setText("I Te Whare Whakapiri");
-//                songDesc.setText("song 6");
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.itewhare_1);
+                songChoice = 6;
                 break;
-            case 7:
+            case "Pua Te Kōwhai":
                 songTitle.setText("Pua Te Kōwhai");
-//                songDesc.setText("song 7");
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.puatekowhai_1);
+                songChoice = 7;
                 break;
             default:
                 break;
         }
+
 
         // mediaplayer on ready
         mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
@@ -167,26 +226,6 @@ public class WaiataPlayer extends AppCompatActivity {
                 playCycle();
             }
         });
-
-        // mediaplayer completed a song
-//        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-//            @Override
-//            public void onCompletion(MediaPlayer mp) {
-//                if (mediaPlayer != null) {
-//                    mediaPlayer.stop();
-//                    mediaPlayer.release();
-//                }
-//
-//                if (songChoice < 7) {
-//                    songChoice++;
-//                    pickSong(songChoice);
-//                    pauseplay.setBackgroundResource(R.drawable.ic_pause);
-//                    mediaPlayer.start();
-//                    flag = false;
-//                }
-//                boundaryCheck();
-//            }
-//        });
 
         // when user adjust the seekbar
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -201,20 +240,22 @@ public class WaiataPlayer extends AppCompatActivity {
             }
 
             @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {}
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
 
             @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {}
+            public void onStopTrackingTouch(SeekBar seekBar) {
+            }
         });
     }
 
     // display song duration timer
-    public void playCycle(){
+    public void playCycle() {
         seekBar.setProgress(mediaPlayer.getCurrentPosition());
         String cTime = createTimeLabel(mediaPlayer.getCurrentPosition());
         curTime.setText(cTime);
 
-        if (mediaPlayer.isPlaying()){
+        if (mediaPlayer.isPlaying()) {
             runnable = new Runnable() {
                 @Override
                 public void run() {

@@ -9,30 +9,12 @@
     tools:context=".About"
     android:orientation="vertical">
 
-    <RelativeLayout
-        android:id="@+id/header"
-        android:layout_alignParentTop="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_title">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="13dp"
-            android:fontFamily="@font/poppins_bold"
-            android:gravity="center"
-            android:text="About Us"
-            android:textColor="@color/white"
-            android:textSize="50dp" />
-
-    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/TeamList"
         android:layout_width="wrap_content"
-        android:layout_height="311dp"
-        android:layout_below="@id/header"
+        android:layout_height="411dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
@@ -40,7 +22,7 @@
 
         <TextView
             android:id="@+id/team"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:text="The Team"
@@ -48,13 +30,16 @@
             android:layout_centerHorizontal="true"
             android:textSize="40dp"
             android:fontFamily="@font/poppins_bold"
+            android:background="@drawable/rounded_back"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
             />
 
 
         <ScrollView
             android:layout_below="@id/team"
             android:layout_width="match_parent"
-            android:layout_height="306dp"
+            android:layout_height="406dp"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp">
 
@@ -323,9 +308,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/TeamList"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="50dp"
+            android:layout_marginRight="10dp"
             android:fontFamily="@font/poppins_medium"
             android:gravity="center_horizontal"
             android:text="@string/about"

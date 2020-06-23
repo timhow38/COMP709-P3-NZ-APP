@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_down_arrow"
+            android:layout_marginHorizontal="8dp"
+            />
+
+    </RelativeLayout>
+
+    <!-- Play back with buttons -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp">
+
+        <!-- Video of song -->
+        <VideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </VideoView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Main title of song -->
+        <TextView
+            android:id="@+id/OVsongTitle"
+            android:text="E Kore Koe E Ngaro"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_width="209dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp" />
+
+        <!-- English title of song -->
+        <TextView
+            android:id="@+id/OVsongTitle2"
+            android:text="0:00"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="209dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/TVsongTitle"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp" />
+
+        <!-- Skip to previous -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/backbuttonOV"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toLeftOf="@+id/pauseplayOV"
+                android:background="@drawable/ic_skip_previous" />
+
+            <!-- Play/Pause button -->
+            <Button
+                android:id="@+id/pauseplayOV"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ic_play_arrow" />
+
+            <!-- Skip to next -->
+            <Button
+                android:id="@+id/skipbuttonOV"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_skip_next"
+                android:layout_toRightOf="@+id/pauseplayOV" />
+
+            <!-- Fullscreen -->
+            <Button
+                android:id="@+id/fullScreenOV"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_skip_next"
+                android:layout_alignParentRight="true" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Seekbar for playback -->
+            <SeekBar
+                android:id="@+id/seekBarOV"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

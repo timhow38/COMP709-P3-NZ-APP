@@ -19,6 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".WaiataPlayer"/>
+        <activity android:name=".WaiataPlayerOV"/>
+        <activity android:name=".WaiataPlayerFullScreen"/>
         <activity android:name=".CarvingActivity"/>
         <activity android:name=".CarvingActivity_Info"/>
         <activity android:name=".About"/>
