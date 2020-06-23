@@ -60,6 +60,7 @@ public class WaiataAdapter extends RecyclerView.Adapter<WaiataAdapter.ViewHolder
         Waiata currentItem = mWaiataList.get(position);
         holder.mImageView.setImageResource(currentItem.getWaiataImage());
         holder.mTextView1.setText(currentItem.getWaiataName());
+//        holder.mTextView1.setText(currentItem.getWaiataName());
     }
 
     @Override
