@@ -1,0 +1,24 @@
+Presentation:
+Present your solution as a group in the Zoom Cast session
+Your presentation should include:
+
+-A PowerPoint style presentation or something similar
+-Your designs - High Fidelity
+-A Navigation Diagram of the entire App
+-A recording of your app to explain as you are presenting
+
+Everyone should participate in the presentation so divide the presentation up evenly among members
+Present your solution in either Week 16 or Week 17 during your class session
+ 
+
+What to Submit:
+Only one group member needs to submit for the group. Make sure everyone in the group is clearly labelled. This can be in your PowerPoint presentation slides
+Put the following into a Zip folder and upload to the submission link
+
+-The entire project code
+-APK files so that it can be loaded on an Android Device
+-Your PowerPoint Presentation slides
+-Include any special conditions and instructions such as:
+  -If you have used an alternative software aka flutter, kotlin, swift etc
+  -If your code is downloadable from Git Hub - include the link to where it is stored on Git Hub
+  -If your solution also includes an iOS solution
