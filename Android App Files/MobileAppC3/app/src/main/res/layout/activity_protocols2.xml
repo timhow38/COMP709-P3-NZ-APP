@@ -21,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="7dp"
         android:text="Marae Protocols"
+        android:fontFamily="@font/poppins_bold"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         android:layout_below="@id/image_view_marae"/>
@@ -28,6 +29,7 @@
     <ScrollView
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
+        android:background="@drawable/textlines"
         android:layout_below="@id/text_view_protocols"
         >
 
@@ -44,6 +46,7 @@
                 android:layout_marginTop="12dp"
                 android:layout_marginLeft="7dp"
                 android:textColor="@android:color/white"
+                android:fontFamily="@font/poppins_regular"
                 android:text="Te Kōpū Mānia o Kirikiriroa is a functional, modern marae complex set up to accommodate a variety of uses. Although our marae is contemporary, we still have protocols and tikanga (customs and traditions) to adhere to." />
 
             <TextView
@@ -54,6 +57,7 @@
                 android:layout_marginTop="6dp"
                 android:layout_marginLeft="7dp"
                 android:textColor="@android:color/white"
+                android:fontFamily="@font/poppins_bold"
                 android:textStyle="bold"
                 android:text="Wharenui – Te Kākano a te Kaahu "/>
 
@@ -66,6 +70,8 @@
                 android:layout_marginRight="7dp"
                 android:layout_marginTop="6dp"
                 android:textColor="@android:color/white"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12dp"
                 android:text="
         •	Please remove footwear before entering the wharenui \n
         •	Please do not consume food or drinks in the wharenui \n
@@ -84,6 +90,7 @@
                 android:layout_marginTop="6dp"
                 android:layout_marginLeft="7dp"
                 android:textColor="@android:color/white"
+                android:fontFamily="@font/poppins_bold"
                 android:textStyle="bold"
                 android:text="Wharekai "/>
 
@@ -110,6 +117,8 @@
         •	Please do not stack chairs on the table \n
         •	Please use dishes provided rather than disposable items \n
 " android:layout_below="@id/text_view_title2"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="12dp"
                 android:textColor="@android:color/white"/>
 
         </RelativeLayout>
