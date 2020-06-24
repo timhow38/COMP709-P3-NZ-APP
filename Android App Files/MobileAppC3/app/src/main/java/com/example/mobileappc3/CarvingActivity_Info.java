@@ -19,23 +19,22 @@ public class CarvingActivity_Info extends AppCompatActivity {
         //Creates Intent
         Intent intent = getIntent();
 
+        //Gets parcelable using "carving_item" from CarvingActivity.class
         Carving carving = intent.getParcelableExtra("carving_item");
 
+        //Sets information from parcelable
         int carving_image = carving.getCarvImageName();
         String carving_name = carving.getCarvName();
         String carving_desc = carving.getCarvDesc();
 
+        //Sets id from XML layout
         ImageView carving_imageView = findViewById(R.id.IM_marae);
-        carving_imageView.setImageResource(carving_image);
         TextView carving_name_textView = findViewById(R.id.TV_title);
-        carving_name_textView.setText(carving_name);
         TextView carving_desc_textView = findViewById(R.id.lyric1);
-        carving_desc_textView.setText(carving_desc);
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        onBackPressed();
-        return true;
+        //Sets images and text from database into XML id
+        carving_imageView.setImageResource(carving_image);
+        carving_name_textView.setText(carving_name);
+        carving_desc_textView.setText(carving_desc);
     }
 }

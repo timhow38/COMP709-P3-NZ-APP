@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class CarvingActivity extends AppCompatActivity {
+
+    //Initialises variables
     private ArrayList<Carving> mCarving = new ArrayList<>();
     private CarvingAdapter mCarvingAdapter;
     private RecyclerView mRecyclerView;
@@ -20,7 +22,10 @@ public class CarvingActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carving);
+        //Loads carvings to database
         loadCarvings();
+
+        //Builds recycler view
         buildRecyclerView();
     }
 
@@ -37,18 +42,30 @@ public class CarvingActivity extends AppCompatActivity {
     }
 
     public void buildRecyclerView(){
+
+        //RecyclerView Settings
         mRecyclerView = findViewById(R.id.recyclerView_carving);
         mRecyclerView.setHasFixedSize(true);
+
+        //Sets Layout Manager for RecyclerView
         mLayoutManager = new LinearLayoutManager(this);
+
+        //Sets Carving Adapter to read carving ArrayList
         mCarvingAdapter = new CarvingAdapter(mCarving);
 
+        //Sets LayoutManager and CarvingAdapter
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setAdapter(mCarvingAdapter);
+
+        //Sets RecyclerView onItemClickListener for each item
         mCarvingAdapter.setOnItemClickListener(new CarvingAdapter.OnItemClickListener(){
             @Override
             public void onItemClick(int position) {
+                //Passes information to new intent using CarvingList position.
                 Intent intent = new Intent(CarvingActivity.this, CarvingActivity_Info.class);
                 intent.putExtra("carving_item", mCarving.get(position));
+
+                //Stats intent
                 startActivity(intent);
             }
         });

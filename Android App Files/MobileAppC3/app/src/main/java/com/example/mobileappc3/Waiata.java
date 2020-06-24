@@ -10,6 +10,8 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "waiata")
 public class Waiata implements Parcelable {
+
+    //Creates
     @PrimaryKey(autoGenerate = true)
     protected int id;
 
@@ -40,6 +42,8 @@ public class Waiata implements Parcelable {
     @ColumnInfo(name = "waiata_VideoName3")
     private int waiataVideoName3;
 
+
+    //Waiata class constructor to collect waiata information
     public Waiata(String waiataName, String waiataDesc, String waiataMaoriLyrics, String waiataEngLyrics, int waiataImage, int waiataMP3, int waiataVideoName1, int waiataVideoName2, int waiataVideoName3) {
         this.waiataName = waiataName;
         this.waiataDesc = waiataDesc;
@@ -52,10 +56,12 @@ public class Waiata implements Parcelable {
         this.waiataVideoName3 = waiataVideoName3;
     }
 
+    //Ignores empty Waiata constructor
     @Ignore
     public Waiata() {
     }
 
+    //Creates Waiata parcel
     protected Waiata(Parcel in) {
         id = in.readInt();
         waiataName = in.readString();
@@ -68,6 +74,7 @@ public class Waiata implements Parcelable {
         waiataVideoName3 = in.readInt();
     }
 
+    //Creates Waiata parcelable
     public static final Creator<Waiata> CREATOR = new Creator<Waiata>() {
         @Override
         public Waiata createFromParcel(Parcel in) {
@@ -80,6 +87,8 @@ public class Waiata implements Parcelable {
         }
     };
 
+
+    //Creates Waiata getters and setters
     public String getWaiataName() {
         return waiataName;
     }
@@ -112,13 +121,17 @@ public class Waiata implements Parcelable {
         this.waiataEngLyrics = waiataEngLyrics;
     }
 
-    public int getWaiataImage() { return waiataImage; }
+    public int getWaiataImage() {
+        return waiataImage;
+    }
 
     public void setWaiataImage(int waiataImage) {
         this.waiataImage = waiataImage;
     }
 
-    public int getWaiataMP3() {  return waiataMP3;  }
+    public int getWaiataMP3() {
+        return waiataMP3;
+    }
 
     public void setWaiataMP3(int waiataMP3) {
         this.waiataMP3 = waiataMP3;
@@ -132,31 +145,20 @@ public class Waiata implements Parcelable {
         this.waiataVideoName1 = waiataVideoName;
     }
 
-    public int getWaiataVideoName2() { return waiataVideoName2; }
+    public int getWaiataVideoName2() {
+        return waiataVideoName2;
+    }
 
     public void setWaiataVideoName2(int waiataVideoName2) {
         this.waiataVideoName2 = waiataVideoName2;
     }
 
-    public int getWaiataVideoName3() { return waiataVideoName3; }
+    public int getWaiataVideoName3() {
+        return waiataVideoName3;
+    }
 
     public void setWaiataVideoName3(int waiataVideoName3) {
         this.waiataVideoName3 = waiataVideoName3;
-    }
-
-    @Override
-    public String toString() {
-        return "Waiata(" +
-                "waiataName='" + waiataName + '\'' +
-                ", waiataDesc='" + waiataDesc + '\'' +
-                ", waiataMaoriLyrics='" + waiataMaoriLyrics + '\'' +
-                ", waiataEngLyrics='" + waiataEngLyrics + '\'' +
-                ", waiataImage='" + waiataImage + '\'' +
-                ", waiataMP3='" + waiataMP3 + '\'' +
-                ", waiataVideoName1='" + waiataVideoName1 + '\'' +
-                ", waiataVideoName2='" + waiataVideoName2 + '\'' +
-                ", waiataVideoName3='" + waiataVideoName3 + '\'' +
-                '}';
     }
 
     @Override
@@ -164,6 +166,7 @@ public class Waiata implements Parcelable {
         return 0;
     }
 
+    //Writes to parcel to create parcelable
     @Override
     public void writeToParcel(Parcel parcel, int i) {
         parcel.writeInt(id);

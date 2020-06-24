@@ -71,6 +71,7 @@ public class WaiataFragment extends Fragment {
         mAdapter.setonItemClickListener(new WaiataAdapter.onItemClickListener(){
             @Override
             public void onItemClick(int position) {
+                //Passes information to new intent using WaiataList position.
                 Intent intent = new Intent(getActivity(), WaiataPlayer.class);
                 intent.putExtra("waiata_item", mWaiata.get(position));
                 startActivity(intent);
