@@ -9,13 +9,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import com.r0adkll.slidr.Slidr;
-import com.r0adkll.slidr.model.SlidrInterface;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class WaiataPlayer extends AppCompatActivity {
-    private SlidrInterface slidr;
     private MediaPlayer mediaPlayer;
     private SeekBar seekBar;
     private Handler handler;
@@ -32,7 +30,6 @@ public class WaiataPlayer extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.waiata_player);
-        slidr = Slidr.attach(this);
 
         songTitle = findViewById(R.id.TVsongTitle);
         curTime = findViewById(R.id.TVsongTitle2);
