@@ -149,6 +149,7 @@ E ko Te Kuratini o Waikato e "
             android:layout_marginLeft="70dp"
             android:layout_marginTop="4dp"
             android:textAlignment="center"
+            android:gravity="center_horizontal"
             android:background="@drawable/btn_play"/>
 
         <Button
