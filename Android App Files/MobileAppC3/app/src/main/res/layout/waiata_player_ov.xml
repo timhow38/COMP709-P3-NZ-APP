@@ -102,7 +102,7 @@
                 android:id="@+id/fullScreenOV"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:background="@drawable/ic_skip_next"
+                android:background="@drawable/ic_baseline_fullscreen_24"
                 android:layout_alignParentRight="true" />
 
 

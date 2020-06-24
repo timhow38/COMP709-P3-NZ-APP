@@ -210,6 +210,7 @@
             android:id="@+id/karaoke"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
             android:padding="20dp"
             android:text="Karaoke" />
 
@@ -217,6 +218,7 @@
             android:id="@+id/non_vocal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
             android:padding="20dp"
             android:text="Non-Vocal" />
 
