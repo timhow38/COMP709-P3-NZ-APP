@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,6 +29,7 @@ public class WaiataPlayerOV extends AppCompatActivity {
     private boolean flag = true;
     private int versionChoice;
     private String songName;
+    private ImageButton back;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -42,8 +44,7 @@ public class WaiataPlayerOV extends AppCompatActivity {
         pauseplay = findViewById(R.id.pauseplayOV);
         nextSong = findViewById(R.id.skipbuttonOV);
         fullScreen = findViewById(R.id.fullScreenOV);
-
-
+        back = findViewById(R.id.back);
 
         final Intent intent = getIntent();
         versionChoice = intent.getIntExtra("OtherVersion", 0);
@@ -62,6 +63,14 @@ public class WaiataPlayerOV extends AppCompatActivity {
                     videoPlayer.seekTo(videoPlayer.getCurrentPosition() - 15000);
                 }
                 playCycle();
+            }
+        });
+
+        //back
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
 
