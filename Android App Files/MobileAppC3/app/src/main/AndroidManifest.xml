@@ -10,22 +10,33 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Protocols2"></activity>
-        <activity android:name=".MaraeInfo2" />
-        <activity android:name=".MainMenu" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Protocols2"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".MaraeInfo2"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainMenu"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WaiataPlayer" />
-        <activity android:name=".WaiataPlayerOV" />
-        <activity android:name=".WaiataPlayerFullScreen" />
-        <activity android:name=".CarvingActivity" />
-        <activity android:name=".CarvingActivity_Info" />
-        <activity android:name=".About" />
+        <activity android:name=".WaiataPlayer"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.SlidrActivityTheme"/>
+        <activity android:name=".WaiataPlayerOV"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".WaiataPlayerFullScreen"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".CarvingActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".CarvingActivity_Info"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".About"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

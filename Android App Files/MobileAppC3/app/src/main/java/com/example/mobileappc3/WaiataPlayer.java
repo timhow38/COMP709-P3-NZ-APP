@@ -1,23 +1,21 @@
 package com.example.mobileappc3;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import androidx.annotation.NonNull;
+import com.r0adkll.slidr.Slidr;
+import com.r0adkll.slidr.model.SlidrInterface;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class WaiataPlayer extends AppCompatActivity {
+    private SlidrInterface slidr;
     private MediaPlayer mediaPlayer;
     private SeekBar seekBar;
     private Handler handler;
@@ -26,15 +24,15 @@ public class WaiataPlayer extends AppCompatActivity {
     private int songChoice;
     private boolean flag = true;
     private Button prevSong, pauseplay, nextSong, karaoke, non_vocal;
-
     private TextView brief_content, maori_lyrics, english_lyrics;
-
     private String wSong, wBrief, wMaoriLyric, wEnglishLyric;
+    private ImageView back;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.waiata_player);
+        slidr = Slidr.attach(this);
 
         songTitle = findViewById(R.id.TVsongTitle);
         curTime = findViewById(R.id.TVsongTitle2);
@@ -43,6 +41,7 @@ public class WaiataPlayer extends AppCompatActivity {
         nextSong = findViewById(R.id.skipbutton);
         karaoke = findViewById(R.id.karaoke);
         non_vocal = findViewById(R.id.non_vocal);
+        back = findViewById(R.id.back1);
 
         handler = new Handler();
         seekBar = findViewById(R.id.seekBar);
@@ -61,9 +60,6 @@ public class WaiataPlayer extends AppCompatActivity {
         wEnglishLyric = waiata.getWaiataEngLyrics();
         english_lyrics = findViewById(R.id.english_lyrics);
         english_lyrics.setText(wEnglishLyric);
-
-
-
 
         int wImageName = waiata.getWaiataImage();
         int wVid1 = waiata.getWaiataVideoName1();
@@ -90,6 +86,13 @@ public class WaiataPlayer extends AppCompatActivity {
                     flag = false;
                 }
                 boundaryCheck();
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
 

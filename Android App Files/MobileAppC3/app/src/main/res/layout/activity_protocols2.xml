@@ -8,29 +8,44 @@
     android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
 
-    <ImageView
+    <RelativeLayout
         android:id="@+id/image_view_marae"
         android:layout_width="match_parent"
         android:layout_height="275dp"
-        android:src="@drawable/wintec_marae"/>
+        >
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:src="@drawable/wintec_marae" />
 
-    <TextView
-        android:id="@+id/text_view_protocols"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="7dp"
-        android:text="Marae Protocols"
-        android:fontFamily="@font/poppins_bold"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        android:layout_below="@id/image_view_marae"/>
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back_one_corner"
+            android:layout_alignParentBottom="true"
+            />
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="7dp"
+            android:text="Marae Protocols"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
 
     <ScrollView
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:background="@drawable/textlines"
-        android:layout_below="@id/text_view_protocols"
+        android:layout_below="@id/image_view_marae"
         >
 
         <RelativeLayout
