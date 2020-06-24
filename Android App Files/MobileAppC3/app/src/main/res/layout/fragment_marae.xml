@@ -74,10 +74,11 @@
             android:src="@drawable/window_lintel" />
 
         <TextView
-            android:background="@drawable/rounded_back_gold"
+            android:background="@drawable/rounded_back"
             android:paddingLeft="7dp"
             android:paddingRight="7dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
@@ -123,7 +124,8 @@
                 android:layout_below="@+id/protocols_btn"
                 android:layout_centerInParent="true"
                 android:text="Protocols"
-                android:background="@drawable/rounded_back_gold"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_back"
                 android:layout_marginTop="10dp"
                 android:paddingLeft="7dp"
                 android:paddingRight="7dp"
@@ -159,7 +161,8 @@
                 android:layout_below="@+id/carvings_btn"
                 android:layout_centerInParent="true"
                 android:text="Carvings"
-                android:background="@drawable/rounded_back_gold"
+                android:background="@drawable/rounded_back"
+                android:textColor="@color/white"
                 android:layout_marginTop="10dp"
                 android:paddingLeft="7dp"
                 android:paddingRight="7dp"

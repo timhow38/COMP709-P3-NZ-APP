@@ -20,6 +20,7 @@
     android:id="@+id/bottom_navigation_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@drawable/rounded_back_str_fill"
     android:theme="@style/BottomNavigationTheme"
     android:layout_alignParentBottom="true"
     app:menu="@menu/bottom_navigation_view_menu" />
