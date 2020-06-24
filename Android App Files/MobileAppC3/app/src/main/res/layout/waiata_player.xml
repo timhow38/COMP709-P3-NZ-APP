@@ -15,11 +15,11 @@
         android:layout_marginTop="15dp">
 
         <ImageView
-            android:id="@+id/back1"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginHorizontal="8dp"
-            android:src="@drawable/ic_baseline_arrow_back_24" />
+            android:src="@drawable/ic_down_arrow" />
 
     </RelativeLayout>
 
@@ -34,7 +34,7 @@
         <TextView
             android:id="@+id/TVsongTitle"
             android:layout_width="209dp"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
@@ -128,7 +128,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="200dp"
         android:background="@drawable/rounded_back">
 
         <RelativeLayout
@@ -201,29 +201,25 @@
     </ScrollView>
 
     <LinearLayout
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center" >
+        android:gravity="center"
+        android:background="@drawable/rounded_back">
 
         <Button
             android:id="@+id/karaoke"
-            android:layout_marginRight="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
             android:padding="20dp"
-            android:background="@drawable/btn_play"
-            android:textColor="@color/white"
             android:text="Karaoke" />
 
         <Button
             android:id="@+id/non_vocal"
-            android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/btn_play"
+            android:textColor="@android:color/white"
             android:padding="20dp"
-            android:textColor="@color/white"
             android:text="Non-Vocal" />
 
     </LinearLayout>
