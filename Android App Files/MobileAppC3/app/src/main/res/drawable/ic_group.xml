@@ -14,6 +14,6 @@
       android:strokeAlpha="0.55"
       android:strokeWidth="2"
       android:fillColor="#00000000"
-      android:strokeColor="#fff"
+      android:strokeColor="@color/nav_icon_active"
       android:fillAlpha="0.55"/>
 </vector>

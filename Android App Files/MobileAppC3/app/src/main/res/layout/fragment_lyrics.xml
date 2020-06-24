@@ -138,7 +138,6 @@ E ko Te Kuratini o Waikato e "
         <Button
             android:id="@+id/Sing"
             android:text="Sing"
-            android:textColor="@color/white"
             android:fontFamily="@font/poppins_bold"
             android:layout_width="120dp"
             android:layout_height="40dp"
@@ -149,13 +148,15 @@ E ko Te Kuratini o Waikato e "
             android:layout_marginLeft="70dp"
             android:layout_marginTop="4dp"
             android:textAlignment="center"
-            android:gravity="center_horizontal"
-            android:background="@drawable/btn_play"/>
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:background="@drawable/rounded_back_gold"
+            tools:ignore="RtlCompat" />
 
         <Button
             android:id="@+id/non_vocal"
             android:text="Non-Vocal"
-            android:textColor="@color/white"
+
             android:fontFamily="@font/poppins_bold"
             android:layout_width="120dp"
             android:layout_height="40dp"
@@ -166,7 +167,10 @@ E ko Te Kuratini o Waikato e "
             android:layout_marginLeft="237dp"
             android:layout_marginTop="2dp"
             android:textAlignment="center"
-            android:background="@drawable/btn_play"/>
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:background="@drawable/rounded_back_gold"
+            tools:ignore="RtlCompat" />
 
     </RelativeLayout>
 
