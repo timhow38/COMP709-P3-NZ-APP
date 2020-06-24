@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 /**
@@ -17,6 +18,7 @@ public class MaraeFragment extends Fragment {
     CardView carving;
     CardView protocols;
     CardView marae_info;
+    ImageButton about;
 
 
     public MaraeFragment() {
@@ -33,7 +35,16 @@ public class MaraeFragment extends Fragment {
         carving = (CardView) view.findViewById(R.id.carvings_btn);
         protocols = (CardView) view.findViewById(R.id.protocols_btn);
         marae_info = (CardView) view.findViewById(R.id.marae_info_btn);
+        about = (ImageButton) view.findViewById(R.id.about);
 
+        //Sets onClickListener for About.class
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), About.class);
+                startActivity(intent);
+            }
+        });
 
         //OnClickListener Methods
         carving.setOnClickListener(new View.OnClickListener() {

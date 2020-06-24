@@ -28,7 +28,7 @@
             android:layout_centerHorizontal="true"
             android:textSize="40dp"
             android:fontFamily="@font/poppins_bold"
-            android:background="@drawable/rounded_back"
+            android:background="@drawable/rounded_back_2"
             android:paddingLeft="15dp"
             android:paddingRight="15dp"
             />
@@ -45,6 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="20dp"
                 android:orientation="vertical"
                 >
@@ -300,7 +301,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:background="@drawable/rounded_back"
+            android:background="@drawable/back"
             android:id="@+id/blurb"
             android:layout_centerHorizontal="true"
             android:layout_width="match_parent"

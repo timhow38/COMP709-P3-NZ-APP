@@ -51,15 +51,15 @@
 
         <ImageButton
             android:id="@+id/about"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginRight="15dp"
-            android:background="@drawable/rounded_back"
-            android:src="@drawable/ic_person" />
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/ic_group"
+            app:srcCompat="@drawable/ic_group"
+            tools:ignore="VectorDrawableCompat" />
 
     </RelativeLayout>
 
@@ -67,11 +67,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/header"
+        android:foregroundGravity="center"
         android:layout_centerInParent="true"
         android:layout_marginTop="15dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView_waiata"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 

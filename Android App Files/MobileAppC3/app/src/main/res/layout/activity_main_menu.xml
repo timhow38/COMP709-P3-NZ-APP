@@ -13,8 +13,8 @@
     android:id="@+id/main_menu_fragmentBox"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:foregroundGravity="center"
     android:layout_above="@id/bottom_navigation_view"/>
-
 
 <com.google.android.material.bottomnavigation.BottomNavigationView
     android:id="@+id/bottom_navigation_view"
@@ -22,9 +22,7 @@
     android:layout_height="wrap_content"
     android:theme="@style/BottomNavigationTheme"
     android:layout_alignParentBottom="true"
-    app:menu="@menu/bottom_navigation_view_menu"
-
-    />
+    app:menu="@menu/bottom_navigation_view_menu" />
 
 </RelativeLayout>
 
