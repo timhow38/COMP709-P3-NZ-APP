@@ -215,10 +215,10 @@
             android:fontFamily="@font/poppins_bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:padding="20dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
             android:text="Karaoke"
-            android:background="@drawable/rounded_back"/>
+            android:background="@drawable/rounded_back_gold"/>
 
         <Button
             android:layout_marginLeft="15dp"
@@ -226,10 +226,10 @@
             android:fontFamily="@font/poppins_bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:padding="20dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
             android:text="Non-Vocal"
-            android:background="@drawable/rounded_back"/>
+            android:background="@drawable/rounded_back_gold"/>
 
     </LinearLayout>
 
