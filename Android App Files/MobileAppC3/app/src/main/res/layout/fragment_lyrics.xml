@@ -148,6 +148,7 @@ E ko Te Kuratini o Waikato e "
             android:layout_marginStart="70dp"
             android:layout_marginLeft="70dp"
             android:layout_marginTop="4dp"
+            android:textAlignment="center"
             android:background="@drawable/btn_play"/>
 
         <Button
@@ -163,6 +164,7 @@ E ko Te Kuratini o Waikato e "
             android:layout_marginStart="237dp"
             android:layout_marginLeft="237dp"
             android:layout_marginTop="2dp"
+            android:textAlignment="center"
             android:background="@drawable/btn_play"/>
 
     </RelativeLayout>

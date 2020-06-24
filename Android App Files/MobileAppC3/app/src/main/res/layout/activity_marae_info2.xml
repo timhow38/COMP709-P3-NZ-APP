@@ -21,6 +21,7 @@
         android:layout_below="@+id/image_view_maraeCarousel"
         android:layout_marginLeft="15dp"
         android:layout_marginTop="7dp"
+        android:fontFamily="@font/poppins_bold"
         android:text="Te Kōpū Mānia o Kirikiriroa"
         android:textColor="@android:color/white"
         android:textSize="25sp" />
@@ -34,6 +35,7 @@
         android:layout_marginRight="15dp"
         android:textColor="@android:color/white"
         android:layout_below="@id/text_view_title"
+        android:fontFamily="@font/poppins_regular"
         android:justificationMode="inter_word"
         android:text="Nau mai haere mai ki Te Kōpū Mānia o Kirikiriroa. Welcome to the Wintec Marae, named for the smooth fertile lands of Hamilton, which linked the Waikato hapū (subtribes) who lived along the banks of the Waikato River."/>
     <TextView
@@ -45,5 +47,6 @@
         android:layout_marginTop="5dp"
         android:textColor="@android:color/white"
         android:layout_below="@+id/text_view_info"
+        android:fontFamily="@font/poppins_regular"
         android:text="Students and staff are able to utilise our multi-purpose marae to conduct and experience teaching, learning and pastoral support in a uniquely Māori environment. Comprising of three main buildings and seven significant carvings, the design of the marae depicts a contemporary version of traditional aspects with a focus on matauranga Māori (learning) and tikanga (customs and traditions)"/>
 </RelativeLayout>
