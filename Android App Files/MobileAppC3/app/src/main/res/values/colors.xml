@@ -9,6 +9,7 @@
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="whiteTransparent">#80FFFFFF</color>
+    <color name="Transparent">#00FFFFFF</color>
     <color name="navBar">#0DFFFFFF</color>
     <color name="titleBars">#003551</color>
 

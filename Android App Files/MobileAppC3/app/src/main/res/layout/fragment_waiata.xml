@@ -67,16 +67,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/header"
-        android:foregroundGravity="center"
         android:layout_centerInParent="true"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="0dp"
+        android:foregroundGravity="center"
+        android:background="@drawable/rounded_back_str"
+        android:scrollbarThumbVertical="@color/nav_icon_active">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView_waiata"
-            android:layout_gravity="center"
-            android:foregroundGravity="center"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:foregroundGravity="center" />
 
     </ScrollView>
 

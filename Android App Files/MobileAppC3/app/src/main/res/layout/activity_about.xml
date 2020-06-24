@@ -35,11 +35,13 @@
 
 
         <ScrollView
-            android:layout_below="@id/team"
             android:layout_width="match_parent"
             android:layout_height="406dp"
+            android:layout_below="@id/team"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp">
+            android:layout_marginBottom="5dp"
+            android:scrollbarThumbHorizontal="@color/nav_icon_active"
+            android:scrollbarThumbVertical="@color/nav_icon_active">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -47,22 +49,20 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="20dp"
-                android:orientation="vertical"
-                >
+                android:orientation="vertical">
 
                 <RelativeLayout
                     android:id="@+id/ray"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    >
+                    android:layout_marginBottom="5dp">
 
                     <ImageView
                         android:id="@+id/ray_photo"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/ray"
-                        android:layout_marginRight="5dp" />
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ray" />
 
                     <TextView
                         android:id="@+id/ray_name"
@@ -95,8 +95,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    >
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:id="@+id/tim_name"
@@ -121,10 +120,10 @@
                         android:textSize="15dp" />
 
                     <ImageView
-                        android:layout_toRightOf="@id/tim_roles"
                         android:id="@+id/tim_photo"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:layout_toRightOf="@id/tim_roles"
                         android:src="@drawable/img_tim" />
 
                 </RelativeLayout>
@@ -134,14 +133,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp" >
+                    android:layout_marginBottom="5dp">
 
                     <ImageView
                         android:id="@+id/rewa_photo"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/rewa"
-                        android:layout_marginRight="5dp" />
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/rewa" />
 
                     <TextView
                         android:id="@+id/rewa_name"
@@ -173,8 +172,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    >
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:id="@+id/lee_name"
@@ -200,10 +198,10 @@
                         android:textSize="15dp" />
 
                     <ImageView
-                        android:layout_toRightOf="@id/lee_roles"
                         android:id="@+id/lee_photo"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:layout_toRightOf="@id/lee_roles"
                         android:src="@drawable/lee" />
 
                 </RelativeLayout>
@@ -213,15 +211,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    >
+                    android:layout_marginBottom="5dp">
 
                     <ImageView
                         android:id="@+id/Arielle_photo"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/arielle"
-                        android:layout_marginRight="5dp" />
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/arielle" />
 
                     <TextView
                         android:id="@+id/Arielle_name"
@@ -253,8 +250,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp"
-                    >
+                    android:layout_marginBottom="5dp">
 
                     <TextView
                         android:id="@+id/jin_name"
@@ -272,18 +268,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/jin_name"
-                        android:layout_marginRight="5dp"
                         android:layout_marginLeft="110dp"
+                        android:layout_marginRight="5dp"
                         android:fontFamily="@font/poppins_regular"
                         android:text="Software Developer"
                         android:textColor="@color/white"
                         android:textSize="15dp" />
 
                     <ImageView
-                        android:layout_toRightOf="@id/jin_roles"
                         android:id="@+id/jin_photo"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:layout_toRightOf="@id/jin_roles"
                         android:src="@drawable/jin" />
 
                 </RelativeLayout>
@@ -295,20 +291,21 @@
     </RelativeLayout>
 
     <ScrollView
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_below="@id/TeamList"
-        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/rounded_back"
-        android:layout_height="wrap_content">
+        android:scrollbarThumbVertical="@color/nav_icon_active">
 
         <TextView
             android:id="@+id/blurb"
-            android:layout_centerHorizontal="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/TeamList"
+            android:layout_centerHorizontal="true"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:fontFamily="@font/poppins_medium"

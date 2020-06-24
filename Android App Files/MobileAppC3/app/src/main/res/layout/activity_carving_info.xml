@@ -52,29 +52,30 @@
         android:layout_width="match_parent"
         android:layout_height="618dp"
         android:layout_marginTop="1dp"
-        android:layout_marginBottom="1dp">
+        android:layout_marginBottom="1dp"
+        android:scrollbarThumbVertical="@color/nav_icon_active">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/relativeLyric1"
-        android:layout_below="@id/RelativeTitle1"
-        android:padding="10dp">
-
-        <TextView
-            android:id="@+id/lyric1"
+        <RelativeLayout
+            android:id="@+id/relativeLyric1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:fontFamily="@font/poppins_medium"
-            android:text="@string/text_info_carving_01"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
-            android:paddingTop="2dp"
-            android:paddingBottom="2dp"/>
+            android:layout_below="@id/RelativeTitle1"
+            android:padding="10dp">
 
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/lyric1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text="@string/text_info_carving_01"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
 
     </ScrollView>
 
