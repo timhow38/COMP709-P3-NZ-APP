@@ -6,14 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.MediaController;
-import android.widget.Toast;
 import android.widget.VideoView;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.net.URI;
 
 public class WaiataPlayerFullScreen extends AppCompatActivity {
     private VideoView fullscreenPlayer;
