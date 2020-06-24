@@ -21,22 +21,23 @@
 
         <ImageView
             android:id="@+id/header"
-            android:layout_width="350dp"
-            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:background="@drawable/back_one_corner"
             android:layout_alignParentBottom="true"
             />
 
         <TextView
             android:id="@+id/text_view_title"
+            android:layout_width="412dp"
+            android:layout_height="29dp"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginLeft="7dp"
             android:layout_marginTop="7dp"
-            android:text="Marae Protocols"
+            android:layout_marginBottom="10dp"
             android:fontFamily="@font/poppins_bold"
+            android:text="Marae Protocols"
+            android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="25sp" />
 
