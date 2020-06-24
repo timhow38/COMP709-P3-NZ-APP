@@ -38,6 +38,7 @@
             android:layout_marginLeft="7dp"
             android:layout_marginTop="7dp"
             android:text="Te Kōpū Mānia o Kirikiriroa"
+            android:fontFamily="@font/poppins_bold"
             android:textColor="@android:color/white"
             android:textSize="25sp" />
 

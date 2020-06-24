@@ -41,7 +41,7 @@ public class WaiataPlayer extends AppCompatActivity {
         nextSong = findViewById(R.id.skipbutton);
         karaoke = findViewById(R.id.karaoke);
         non_vocal = findViewById(R.id.non_vocal);
-        back = findViewById(R.id.back1);
+        back = findViewById(R.id.back);
 
         handler = new Handler();
         seekBar = findViewById(R.id.seekBar);

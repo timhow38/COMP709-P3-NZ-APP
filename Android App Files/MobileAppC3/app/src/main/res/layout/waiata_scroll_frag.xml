@@ -134,10 +134,8 @@
 
         <Button
             android:id="@+id/recommendplay2"
-            android:textAlignment="center"
-            android:gravity="center_horizontal"
-            android:layout_width="100dp"
-            android:layout_height="30dp"
+
+
             android:layout_below="@+id/recommendtext2"
             android:layout_toRightOf="@+id/recommendimg2"
             android:layout_marginStart="10dp"
@@ -145,6 +143,11 @@
             android:fontFamily="@font/poppins_bold"
             android:textColor="@color/white"
             android:layout_marginLeft="10dp"
+
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
             android:background="@drawable/btn_vocal"/>
 
         <Button
