@@ -127,16 +127,22 @@
     </RelativeLayout>
 
     <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/rounded_back">
+        android:layout_height="260dp"
+        android:background="@drawable/rounded_back"
+        >
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            >
 
             <TextView
                 android:id="@+id/brief"
+
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:textColor="@android:color/white"
@@ -220,7 +226,7 @@
             android:background="@drawable/rounded_back_gold"/>
 
         <Button
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="10dp"
             android:id="@+id/non_vocal"
             android:fontFamily="@font/poppins_bold"
             android:layout_width="wrap_content"
